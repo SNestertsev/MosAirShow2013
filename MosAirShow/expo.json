@@ -1,0 +1,154 @@
+{
+    "expoVersion" : "13",
+    "expoDate" : "2013-06-30",
+    "boundsWidth" : "1000",
+    "boundsHeight" : "10000",
+    "sections" :
+    [
+        {
+            "name" : "Антонов",
+            "index" : "Ан",
+            "planes" :
+            [
+                {
+                 "name" : "Ан-124-100",
+                 "labelCorner" : "3",
+                 "rectTop" : "0",
+                 "rectLeft" : "500",
+                 "rectWidth" : "500",
+                 "rectHeight" : "525",
+                 "imageFile" : "Images/An-124.png",
+                 "flipImage" : "1",
+                 "description" : "Descriptions/An-124.htm"
+                 },
+             {
+             "name" : "Ан-225",
+             "labelCorner" : "3",
+             "rectTop" : "1050",
+             "rectLeft" : "500",
+             "rectWidth" : "500",
+             "rectHeight" : "500",
+             "imageFile" : "Images/An-225.png",
+             "flipImage" : "1",
+             "description" : "Descriptions/An-225.htm"
+             }
+            ]
+         },
+         {
+            "name" : "Ильюшин",
+            "index" : "Ил",
+            "planes" :
+            [
+             {
+                "name" : "Ил-96-400Т",
+                "labelCorner" : "3",
+                "rectTop" : "530",
+                "rectLeft" : "550",
+                "rectWidth" : "450",
+                "rectHeight" : "500",
+                "imageFile" : "Images/Il-96.png",
+                "flipImage" : "1",
+                "description" : "Descriptions/An-124.htm"
+             }
+            ]
+         },
+         {
+            "name" : "Сухой",
+            "index" : "Су",
+            "planes" :
+            [
+                {
+                "name" : "Су-35",
+                "labelCorner" : "2",
+                "rectTop" : "0",
+                "rectLeft" : "0",
+                "rectWidth" : "500",
+                "rectHeight" : "230",
+                "imageFile" : "Images/Su-35.png",
+                "flipImage" : "0",
+                "description" : "Descriptions/Su-35.htm",
+                "rightMargin" : "200"
+                },
+             {
+             "name" : "Су-35",
+             "labelCorner" : "2",
+             "rectTop" : "230",
+             "rectLeft" : "0",
+             "rectWidth" : "500",
+             "rectHeight" : "230",
+             "imageFile" : "Images/Su-35.png",
+             "flipImage" : "0",
+             "description" : "Descriptions/Su-35.htm",
+             "rightMargin" : "200"
+             },
+             {
+             "name" : "Су-30МК-2",
+             "labelCorner" : "2",
+             "rectTop" : "460",
+             "rectLeft" : "0",
+             "rectWidth" : "500",
+             "rectHeight" : "230",
+             "imageFile" : "Images/Su-35.png",
+             "flipImage" : "0",
+             "description" : "Descriptions/Su-30MK.htm",
+             "rightMargin" : "200"
+             },
+             {
+             "name" : "Су-32",
+             "labelCorner" : "2",
+             "rectTop" : "690",
+             "rectLeft" : "0",
+             "rectWidth" : "500",
+             "rectHeight" : "230",
+             "imageFile" : "Images/Su-35.png",
+             "flipImage" : "0",
+             "description" : "Descriptions/Su-32.htm",
+             "rightMargin" : "200"
+             },
+             ]
+        }
+    ],
+    "gpsBindings" :
+    [
+        {
+     "modelRegion" :
+     [
+      {
+      "pointX" : "0",
+      "pointY" : "0"
+      },
+      {
+      "pointX" : "1000",
+      "pointY" : "0"
+      },
+      {
+      "pointX" : "1000",
+      "pointY" : "1000"
+      },
+      {
+      "pointX" : "0",
+      "pointY" : "1000"
+      }
+     ],
+     "gpsRegion" :
+     [
+      {
+      "pointX" : "0",
+      "pointY" : "0"
+      },
+      {
+      "pointX" : "1000",
+      "pointY" : "0"
+      },
+      {
+      "pointX" : "1000",
+      "pointY" : "1000"
+      },
+      {
+      "pointX" : "0",
+      "pointY" : "1000"
+      }
+     ]
+        }
+    ]
+}

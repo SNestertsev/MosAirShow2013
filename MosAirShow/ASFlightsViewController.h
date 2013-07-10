@@ -1,5 +1,5 @@
 //
-//  ASAppDelegate.h
+//  ASSecondViewController.h
 //  AirShow2013
 //
 //  Created by Sergey Nestertsev on 28.05.13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface ASFlightsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
