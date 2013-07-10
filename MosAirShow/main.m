@@ -1,0 +1,18 @@
+//
+//  main.m
+//  MosAirShow
+//
+//  Created by Sergey Nestertsev on 10.07.13.
+//  Copyright (c) 2013 Sergey Nestertsev. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+#import "ASAppDelegate.h"
+
+int main(int argc, char *argv[])
+{
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ASAppDelegate class]));
+    }
+}
