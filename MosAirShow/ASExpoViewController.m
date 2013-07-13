@@ -83,6 +83,12 @@
     [self.reach startNotifier];
 }
 
+-(void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    [self updateExpoItems];
+}
+
 -(void)updateExpoItems
 {
     // Remove all currently visible expo items

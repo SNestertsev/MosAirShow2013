@@ -34,15 +34,11 @@
     if (self.planeName.length > 0) {
         self.title = self.planeName;
     }
-
     if (self.descriptionFile.length > 0) {
         NSString *path = [[NSBundle mainBundle] pathForResource:self.descriptionFile ofType:nil];
         if (path.length > 0) {
             NSString *htmlPage = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
             [self.webView loadHTMLString:htmlPage baseURL:[[NSBundle mainBundle] bundleURL]];
-            //NSURL *url = [NSURL URLWithString:self.descriptionText relativeToURL:[[NSBundle mainBundle] bundleURL]];
-            //NSURLRequest *request = [NSURLRequest requestWithURL:url];
-            //[self.webView loadRequest:request];
         }
     }
 }
