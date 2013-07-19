@@ -1,5 +1,5 @@
 {
-    "expoVersion" : "13",
+    "expoVersion" : "14",
     "expoDate" : "2013-06-30",
     "boundsWidth" : "1000",
     "boundsHeight" : "10000",
@@ -48,7 +48,7 @@
                 "rectHeight" : "500",
                 "imageFile" : "Images/Il-96.png",
                 "flipImage" : "1",
-                "description" : "Descriptions/An-124.htm"
+                "description" : "Descriptions/Il-96-400T.htm"
              }
             ]
          },

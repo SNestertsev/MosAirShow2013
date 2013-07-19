@@ -17,7 +17,8 @@
 #import "Reachability.h"
 
 #define kDataFileName @"expo.json"
-#define kWebServerName @"mosairshow2013.ucoz.ru"
+//#define kWebServerName @"mosairshow2013.ucoz.ru"
+#define kWebServerName @"sites.google.com"
 //#define kDataFileOnWeb @"http://mosairshow2013.ucoz.ru/expo.json"
 #define kDataFileOnWeb @"https://sites.google.com/site/mosairshow2013/expo.json?attredirects=0&d=1"
 //#define kVersionsFileOnWeb @"http://mosairshow2013.ucoz.ru/versions.json"

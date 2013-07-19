@@ -13,8 +13,15 @@
 #import "ASFlightsDay.h"
 #import "ASFlight.h"
 #import "NSDate+DateCategories.h"
+#import "Reachability.h"
 
 #define kDataFileName @"flights.json"
+//#define kWebServerName @"mosairshow2013.ucoz.ru"
+#define kWebServerName @"sites.google.com"
+//#define kDataFileOnWeb @"http://mosairshow2013.ucoz.ru/expo.json"
+#define kDataFileOnWeb @"https://sites.google.com/site/mosairshow2013/flights.json?attredirects=0&d=1"
+//#define kVersionsFileOnWeb @"http://mosairshow2013.ucoz.ru/versions.json"
+#define kVersionsFileOnWeb @"https://sites.google.com/site/mosairshow2013/versions.json?attredirects=0&d=1"
 
 @interface ASFlightsViewController ()
 
@@ -22,6 +29,8 @@
 @property (weak, nonatomic) IBOutlet UITableView *flightsTable;
 @property (nonatomic, strong) ASFlightsModel *flights;
 @property (nonatomic, strong) NSTimer *refreshTimer;
+@property (strong, nonatomic) Reachability *reach;
+@property (strong, nonatomic) NSDate *lastFileUpdate;
 
 @end
 
@@ -60,6 +69,14 @@
     }
     self.flights = fileModel;
     self.firstAppearance = YES;
+
+    // Initiate async update of the flights list from server
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    [comps setDay:-1];
+    self.lastFileUpdate = [[NSCalendar currentCalendar] dateByAddingComponents:comps toDate:[NSDate date] options:0];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanges:) name:kReachabilityChangedNotification object:nil];
+    self.reach = [Reachability reachabilityWithHostName:kWebServerName];
+    [self.reach startNotifier];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -133,6 +150,30 @@
     destination.planeFileName = flight.planeFileName;
 }
 
+-(void)reachabilityChanges: (NSNotification*)notification
+{
+    [self doAsyncUpdate];
+}
+
+-(void)doAsyncUpdate
+{
+    NSDateComponents *comps = [[NSCalendar currentCalendar] components:NSHourCalendarUnit fromDate:self.lastFileUpdate toDate:[NSDate date] options:0];
+    if (comps.hour <= 0) return;    // Less than an hour since the file was updated last time
+    NetworkStatus status = [self.reach currentReachabilityStatus];
+    if (status != ReachableViaWiFi && status != ReachableViaWWAN) {
+        return;
+    }
+    if (versionsFileConnection != nil || dataFileConnection != nil) {
+        return; // File is already loading
+    }
+    
+    // Download versions.json
+    theURL = [NSURL URLWithString:kVersionsFileOnWeb];
+    NSURLRequest *request = [NSURLRequest requestWithURL:theURL];
+    versionsFileConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+}
+
 #pragma mark - Table view data source
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -162,7 +203,7 @@
     NSString *cellIdentifier;
     NSDate *now = [NSDate date];
     NSDate* today = [now dateWithNoTime];
-    NSComparisonResult compStart = [flight.startTime compare:now];
+    //NSComparisonResult compStart = [flight.startTime compare:now];
     NSComparisonResult compEnd = [flight.endTime compare:now];
     NSString *timeToFlight;
     if (![[flight.startTime dateWithNoTime] isEqualToDate:today]) {
@@ -176,11 +217,11 @@
     }
     else {
         // Flight is today
-        NSDateComponents *deltaStart = [[NSCalendar currentCalendar] components:NSHourCalendarUnit|NSMinuteCalendarUnit fromDate:now toDate:flight.startTime options:0];
+        //NSDateComponents *deltaStart = [[NSCalendar currentCalendar] components:NSHourCalendarUnit|NSMinuteCalendarUnit fromDate:now toDate:flight.startTime options:0];
         if (compEnd == NSOrderedAscending) {
             cellIdentifier = @"PassedCell";
         }
-        else if (compStart == NSOrderedAscending && compEnd == NSOrderedDescending)
+        /*else if (compStart == NSOrderedAscending && compEnd == NSOrderedDescending)
         {
             cellIdentifier = @"NearestCell";
             timeToFlight = NSLocalizedStringFromTable(@"Now", @"Strings", nil);
@@ -191,7 +232,7 @@
             NSString *timeFormat = NSLocalizedStringFromTable(@"In %d minutes", @"Strings", nil);
             timeToFlight = [NSString stringWithFormat:timeFormat, deltaStart.minute + 1];
             //timeToFlight = [NSString stringWithFormat:@"In %d minutes", deltaStart.minute];
-        }
+        }*/
         else {
             cellIdentifier = @"FutureCell";
         }
@@ -217,7 +258,7 @@
     ASFlight *flight = [day.flights objectAtIndex:indexPath.row];
     NSDate *now = [NSDate date];
     NSDate* today = [now dateWithNoTime];
-    NSComparisonResult compStart = [flight.startTime compare:now];
+    //NSComparisonResult compStart = [flight.startTime compare:now];
     NSComparisonResult compEnd = [flight.endTime compare:now];
     if (![[flight.startTime dateWithNoTime] isEqualToDate:today]) {
         // Flight is not today
@@ -225,22 +266,88 @@
     }
     else {
         // Flight is today
-        NSDateComponents *deltaStart = [[NSCalendar currentCalendar] components:NSHourCalendarUnit|NSMinuteCalendarUnit fromDate:now toDate:flight.startTime options:0];
+        //NSDateComponents *deltaStart = [[NSCalendar currentCalendar] components:NSHourCalendarUnit|NSMinuteCalendarUnit fromDate:now toDate:flight.startTime options:0];
         if (compEnd == NSOrderedAscending) {
             return 60;  // @"PassedCell";
         }
-        else if (compStart == NSOrderedAscending && compEnd == NSOrderedDescending)
+        /*else if (compStart == NSOrderedAscending && compEnd == NSOrderedDescending)
         {
             return 90;  // @"NearestCell";
         }
         else if (deltaStart.hour == 0 && [day isFlight:flight within:3 nearTime:now]) {
             return 90;  // @"NearestCell";
-        }
+        }*/
         else {
             return 60;  // @"FutureCell";
         }
     }
     return 60;
+}
+
+#pragma mark - NSURLConnection Delegate methods
+
+-(NSURLRequest *)connection:(NSURLConnection *)connection willSendRequest:(NSURLRequest *)request redirectResponse:(NSURLResponse *)response
+{
+    @autoreleasepool {
+        theURL = [request URL];
+    }
+    return request;
+}
+
+-(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
+    if (responseData == nil) {
+        responseData = [[NSMutableData alloc] init];
+    }
+    [responseData setLength:0];
+}
+
+-(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    [responseData appendData:data];
+}
+
+-(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    NSLog(@"Error = %@", error);
+}
+
+-(void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    //NSString *content = [[NSString alloc] initWithBytes:[responseData bytes] length:[responseData length] encoding:NSUTF8StringEncoding];
+    //NSLog(@"Data = %@", content);
+    
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    if (connection == versionsFileConnection) {
+        NSError *err;
+        NSDictionary* json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&err];
+        if (!json) return;
+        int serverFlightsVersion = ((NSNumber*)[json objectForKey:@"flightsVersion"]).intValue;
+        if (serverFlightsVersion > self.flights.version) {
+            NSLog(@"New version of Flights list is on the server: %d", serverFlightsVersion);
+            theURL = [NSURL URLWithString:kDataFileOnWeb];
+            NSURLRequest *request = [NSURLRequest requestWithURL:theURL];
+            dataFileConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+        }
+        versionsFileConnection = nil;
+    }
+    else if (connection == dataFileConnection) {
+        NSError *err;
+        NSDictionary* json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&err];
+        if (!json) return;
+        ASFlightsModel *newModel = [[ASFlightsModel alloc] initWithJSON:json];
+        if (newModel.version > self.flights.version) {
+            // Save new file on disk
+            [responseData writeToFile:kDataFileName atomically:YES];
+            self.flights = newModel;
+            // Update the view
+            [self.flightsTable reloadData];
+        }
+        
+        dataFileConnection = nil;
+    }
 }
 
 @end

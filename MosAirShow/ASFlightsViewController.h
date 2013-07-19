@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASFlightsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ASFlightsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
+    NSURLConnection *versionsFileConnection;
+    NSURLConnection *dataFileConnection;
+    NSURL *theURL;
+    NSMutableData *responseData;
+}
+
 
 @end
