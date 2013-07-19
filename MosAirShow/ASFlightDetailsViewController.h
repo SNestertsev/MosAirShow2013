@@ -14,5 +14,7 @@
 @property (nonatomic, strong) NSString *endTime;
 @property (nonatomic, strong) NSString *flightName;
 @property (nonatomic, strong) NSString *flightDetails;
+@property (nonatomic, strong) NSString *planeName;
+@property (nonatomic, strong) NSString *planeFileName;
 
 @end

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>ru</string>
 	<key>CFBundleDisplayName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>
@@ -14,10 +14,10 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>icon_phone.png</string>
-				<string>icon_phone@2x.png</string>
-				<string>icon.png</string>
-				<string>icon@2x.png</string>
+				<string>lii_icon_iphone.png</string>
+				<string>lii_icon_iphone@2x.png</string>
+				<string>lii_icon.png</string>
+				<string>lii_icon@2x.png</string>
 			</array>
 		</dict>
 	</dict>
@@ -45,6 +45,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleBlackOpaque</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

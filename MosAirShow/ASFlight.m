@@ -14,6 +14,8 @@
 #define kDateFormat @"HH:mm"
 #define kNameAttribute @"name"
 #define kDescriptionAttribute @"description"
+#define kPlaneAttribute @"plane"
+#define kPlaneFileAttribute @"planeFile"
 
 @implementation ASFlight
 
@@ -38,6 +40,8 @@
         self.endTime = [day withTime:time];
         self.name = [json objectForKey:kNameAttribute];
         self.descriptionText = [json objectForKey:kDescriptionAttribute];
+        self.planeName = [json objectForKey:kPlaneAttribute];
+        self.planeFileName = [json objectForKey:kPlaneFileAttribute];
     }
     return self;
 }

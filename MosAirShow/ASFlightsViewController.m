@@ -59,56 +59,6 @@
         }
     }
     self.flights = fileModel;
-    
-    /*self.flights = [[ASFlightsModel alloc] init];
-    NSDate *date = [[NSDate date] dateWithNoTime];
-    
-    ASFlightsDay *day = [[ASFlightsDay alloc] initWithDate:date];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:10 minute:0] endTime:[date withHour:10 minute:5] name:@"Русские витязи"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:10 minute:5] endTime:[date withHour:10 minute:25] name:@"Русские витязи 2"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:10 minute:30] endTime:[date withHour:10 minute:45] name:@"Русские витязи 3"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:10 minute:45] endTime:[date withHour:11 minute:32] name:@"Русские витязи 4"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:11 minute:35] endTime:[date withHour:11 minute:40] name:@"Русские витязи 5"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:11 minute:45] endTime:[date withHour:12 minute:5] name:@"Русские витязи 6"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:12 minute:5] endTime:[date withHour:12 minute:15] name:@"Стрижи"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:13 minute:5] endTime:[date withHour:13 minute:15] name:@"Стрижи"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:14 minute:5] endTime:[date withHour:14 minute:15] name:@"Стрижи"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:15 minute:5] endTime:[date withHour:15 minute:15] name:@"Стрижи"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:16 minute:5] endTime:[date withHour:16 minute:15] name:@"Стрижи"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:17 minute:5] endTime:[date withHour:17 minute:15] name:@"Стрижи"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:18 minute:30] endTime:[date withHour:18 minute:35] name:@"Проход с дымами"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:19 minute:30] endTime:[date withHour:19 minute:35] name:@"Свободный полет"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:20 minute:30] endTime:[date withHour:20 minute:35] name:@"Свободный полет"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:21 minute:30] endTime:[date withHour:21 minute:35] name:@"Свободный полет"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:22 minute:30] endTime:[date withHour:22 minute:35] name:@"Свободный полет"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:23 minute:30] endTime:[date withHour:23 minute:35] name:@"Свободный полет"]];
-    [self.flights.days addObject:day];
-    
-    NSDateComponents *dayComponent = [[NSDateComponents alloc] init];
-    dayComponent.day = 1;
-    date = [[NSCalendar currentCalendar] dateByAddingComponents:dayComponent toDate:date options:0];
-    day = [[ASFlightsDay alloc] initWithDate:date];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:10 minute:0] endTime:[date withHour:10 minute:5] name:@"Русские витязи"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:10 minute:5] endTime:[date withHour:10 minute:25] name:@"Русские витязи 2"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:10 minute:30] endTime:[date withHour:10 minute:45] name:@"Русские витязи 3"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:10 minute:45] endTime:[date withHour:11 minute:32] name:@"Русские витязи 4"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:11 minute:35] endTime:[date withHour:11 minute:40] name:@"Русские витязи 5"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:11 minute:45] endTime:[date withHour:12 minute:5] name:@"Русские витязи 6"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:12 minute:5] endTime:[date withHour:12 minute:15] name:@"Стрижи"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:13 minute:5] endTime:[date withHour:13 minute:15] name:@"Стрижи"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:14 minute:5] endTime:[date withHour:14 minute:15] name:@"Стрижи"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:15 minute:5] endTime:[date withHour:15 minute:15] name:@"Стрижи"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:16 minute:5] endTime:[date withHour:16 minute:15] name:@"Стрижи"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:17 minute:5] endTime:[date withHour:17 minute:15] name:@"Стрижи"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:18 minute:30] endTime:[date withHour:18 minute:35] name:@"Проход с дымами"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:19 minute:30] endTime:[date withHour:19 minute:35] name:@"Свободный полет"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:20 minute:30] endTime:[date withHour:20 minute:35] name:@"Свободный полет"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:21 minute:30] endTime:[date withHour:21 minute:35] name:@"Свободный полет"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:22 minute:30] endTime:[date withHour:22 minute:35] name:@"Свободный полет"]];
-    [day.flights addObject:[[ASFlight alloc] initWithStartTime:[date withHour:23 minute:30] endTime:[date withHour:23 minute:35] name:@"Свободный полет"]];
-    [self.flights.days addObject:day];
-     */
-    
     self.firstAppearance = YES;
 }
 
@@ -179,6 +129,8 @@
     destination.endTime = [timeFormat stringFromDate:flight.endTime];
     destination.flightName = flight.name;
     destination.flightDetails = flight.descriptionText;
+    destination.planeName = flight.planeName;
+    destination.planeFileName = flight.planeFileName;
 }
 
 #pragma mark - Table view data source
@@ -231,11 +183,14 @@
         else if (compStart == NSOrderedAscending && compEnd == NSOrderedDescending)
         {
             cellIdentifier = @"NearestCell";
-            timeToFlight = @"Now";
+            timeToFlight = NSLocalizedStringFromTable(@"Now", @"Strings", nil);
+            //timeToFlight = @"Now";
         }
         else if (deltaStart.hour == 0 && [day isFlight:flight within:3 nearTime:now]) {
             cellIdentifier = @"NearestCell";
-            timeToFlight = [NSString stringWithFormat:@"In %d minutes", deltaStart.minute];
+            NSString *timeFormat = NSLocalizedStringFromTable(@"In %d minutes", @"Strings", nil);
+            timeToFlight = [NSString stringWithFormat:timeFormat, deltaStart.minute + 1];
+            //timeToFlight = [NSString stringWithFormat:@"In %d minutes", deltaStart.minute];
         }
         else {
             cellIdentifier = @"FutureCell";

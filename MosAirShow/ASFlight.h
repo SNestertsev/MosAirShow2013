@@ -14,6 +14,8 @@
 @property (nonatomic, strong) NSDate *endTime;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *descriptionText;
+@property (nonatomic, strong) NSString *planeName;
+@property (nonatomic, strong) NSString *planeFileName;
 
 -(id)initWithStartTime:(NSDate*)startTime endTime:(NSDate*)endTime name:(NSString*)name;
 -(id)initWithJSON:(NSDictionary *)json withDay:(NSDate*)day;

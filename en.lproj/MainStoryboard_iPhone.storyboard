@@ -22,8 +22,8 @@
                             <constraint firstItem="jtB-ee-N9t" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="Vum-JD-laA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Экспо" image="first" id="7"/>
-                    <navigationItem key="navigationItem" title="Экспо" id="v5J-aY-JJo"/>
+                    <tabBarItem key="tabBarItem" title="Static" image="static_icon" id="7"/>
+                    <navigationItem key="navigationItem" title="Static Expo" id="v5J-aY-JJo"/>
                     <connections>
                         <outlet property="scrollView" destination="jtB-ee-N9t" id="aHu-5t-a2O"/>
                         <segue destination="TV9-oz-jGC" kind="push" identifier="ShowPlaneDetails" id="YgI-GG-svg"/>
@@ -34,7 +34,7 @@
             </objects>
             <point key="canvasLocation" x="1055" y="-885"/>
         </scene>
-        <!--Planes View Controller - Список техники-->
+        <!--Planes View Controller - All Crafts-->
         <scene sceneID="mLZ-N6-i5Q">
             <objects>
                 <viewController id="cIV-4T-QQH" customClass="ASPlanesViewController" sceneMemberID="viewController">
@@ -72,7 +72,7 @@
                             <constraint firstItem="y5j-5e-w8J" firstAttribute="top" secondItem="tok-ln-tCe" secondAttribute="bottom" type="default" id="qhH-fo-7UK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Список техники" id="WY7-GC-VW3"/>
+                    <navigationItem key="navigationItem" title="All Crafts" id="WY7-GC-VW3"/>
                     <connections>
                         <outlet property="searchBar" destination="tok-ln-tCe" id="XWn-JC-aQX"/>
                         <outlet property="tableView" destination="y5j-5e-w8J" id="SGy-h7-DLq"/>
@@ -80,9 +80,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="20s-Im-r8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1489" y="-884"/>
+            <point key="canvasLocation" x="1497" y="-884"/>
         </scene>
-        <!--Plane Details View Controller - Аппарат-->
+        <!--Plane Details View Controller - Craft-->
         <scene sceneID="lPU-Jq-ddj">
             <objects>
                 <viewController id="TV9-oz-jGC" customClass="ASPlaneDetailsViewController" sceneMemberID="viewController">
@@ -92,6 +92,7 @@
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsx-hK-rb5">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -102,7 +103,7 @@
                             <constraint firstItem="lsx-hK-rb5" firstAttribute="trailing" secondItem="HtZ-mp-nSa" secondAttribute="trailing" type="default" id="vVQ-C7-PYd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Аппарат" id="PGr-1g-yiH"/>
+                    <navigationItem key="navigationItem" title="Craft" id="PGr-1g-yiH"/>
                     <connections>
                         <outlet property="webView" destination="lsx-hK-rb5" id="Ha1-Zh-9nM"/>
                     </connections>
@@ -111,11 +112,11 @@
             </objects>
             <point key="canvasLocation" x="1873" y="-557"/>
         </scene>
-        <!--Navigation Controller - Экспо-->
+        <!--Navigation Controller - Static-->
         <scene sceneID="8BD-SN-rRw">
             <objects>
                 <navigationController definesPresentationContext="YES" id="xF1-MJ-XKv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Экспо" id="wnD-jX-KXD"/>
+                    <tabBarItem key="tabBarItem" title="Static" image="static_icon" id="wnD-jX-KXD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="T5l-dK-U5j">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -127,11 +128,103 @@
             </objects>
             <point key="canvasLocation" x="609" y="-885"/>
         </scene>
-        <!--Navigation Controller - Полёты-->
+        <!--View Controller - About-->
+        <scene sceneID="g3k-3n-poR">
+            <objects>
+                <viewController id="Kmh-Wk-xgC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9WH-wx-z3u">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LII.png" translatesAutoresizingMaskIntoConstraints="NO" id="fQD-Q8-mmH">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="cOO-Qm-KUO"/>
+                                    <constraint firstAttribute="width" constant="124" id="zqv-Zu-UNe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ОАО &quot;ЛИИ им. Громова&quot;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gES-V7-4bH">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Project manager" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5N-GP-BJz">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="WUR-eq-P74"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nestertseva Irene" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20x-tY-YCN">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lead developer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjN-5o-Uza">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="RrF-JO-pH0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nestertsev Sergey" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQx-tT-vCo">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Photos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc5-Ks-Nfu">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ruN-dl-q02"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gribovsky Mikhail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0H-Qu-uZx">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W0H-Qu-uZx" firstAttribute="top" secondItem="Pc5-Ks-Nfu" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="0Zt-uS-dgA"/>
+                            <constraint firstItem="20x-tY-YCN" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="43e-95-hdS"/>
+                            <constraint firstItem="Pc5-Ks-Nfu" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4su-mT-KQC"/>
+                            <constraint firstAttribute="trailing" secondItem="I5N-GP-BJz" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8GQ-AK-s57"/>
+                            <constraint firstItem="vjN-5o-Uza" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="8Zi-ga-Oif"/>
+                            <constraint firstItem="vjN-5o-Uza" firstAttribute="top" secondItem="20x-tY-YCN" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="9t9-Vs-S8D"/>
+                            <constraint firstAttribute="trailing" secondItem="W0H-Qu-uZx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="F4P-nO-i9h"/>
+                            <constraint firstAttribute="trailing" secondItem="20x-tY-YCN" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="H51-eD-nlu"/>
+                            <constraint firstItem="GQx-tT-vCo" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="HZu-SH-iXL"/>
+                            <constraint firstAttribute="trailing" secondItem="gES-V7-4bH" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="JBS-e1-7KH"/>
+                            <constraint firstAttribute="trailing" secondItem="vjN-5o-Uza" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Kmg-cf-cWf"/>
+                            <constraint firstItem="I5N-GP-BJz" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Lhf-Dx-jdM"/>
+                            <constraint firstItem="Pc5-Ks-Nfu" firstAttribute="top" secondItem="GQx-tT-vCo" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="MaP-JN-zIU"/>
+                            <constraint firstItem="fQD-Q8-mmH" firstAttribute="top" secondItem="9WH-wx-z3u" secondAttribute="top" constant="20" symbolic="YES" type="default" id="SDI-zi-rnB"/>
+                            <constraint firstItem="fQD-Q8-mmH" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SIR-YD-all"/>
+                            <constraint firstAttribute="trailing" secondItem="Pc5-Ks-Nfu" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="XaI-PX-mDZ"/>
+                            <constraint firstItem="GQx-tT-vCo" firstAttribute="top" secondItem="vjN-5o-Uza" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Xdz-hU-gna"/>
+                            <constraint firstItem="W0H-Qu-uZx" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="jZX-rH-a1S"/>
+                            <constraint firstItem="gES-V7-4bH" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lzL-Yn-uwY"/>
+                            <constraint firstItem="20x-tY-YCN" firstAttribute="top" secondItem="I5N-GP-BJz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="mvp-N0-xjA"/>
+                            <constraint firstItem="gES-V7-4bH" firstAttribute="top" secondItem="fQD-Q8-mmH" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="nJb-iU-6MD"/>
+                            <constraint firstItem="I5N-GP-BJz" firstAttribute="top" secondItem="9WH-wx-z3u" secondAttribute="top" constant="162" id="qu6-Aa-EQh"/>
+                            <constraint firstAttribute="trailing" secondItem="GQx-tT-vCo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="sJu-t0-Ya7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="about_icon" id="TPb-CC-fn8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SlF-6F-KRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72" y="-55"/>
+        </scene>
+        <!--Navigation Controller - Flights-->
         <scene sceneID="9M4-aD-tcY">
             <objects>
                 <navigationController definesPresentationContext="YES" id="A2Y-Nb-pza" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Полёты" image="second" id="1lp-eS-2vF"/>
+                    <tabBarItem key="tabBarItem" title="Flights" image="flights_icon" id="1lp-eS-2vF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rO9-Au-Lu1">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -365,8 +458,8 @@
                             <constraint firstItem="TYX-DD-wor" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="m79-iD-CJh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Полёты" image="second" id="6"/>
-                    <navigationItem key="navigationItem" title="Полёты" id="wqZ-yZ-hcx"/>
+                    <tabBarItem key="tabBarItem" title="Flights" image="flights_icon" id="6"/>
+                    <navigationItem key="navigationItem" title="Flights" id="wqZ-yZ-hcx"/>
                     <connections>
                         <outlet property="flightsTable" destination="TYX-DD-wor" id="FrC-MC-LKq"/>
                     </connections>
@@ -385,8 +478,8 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TD9-i9-pfQ">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="aBQ-Fm-kji"/>
                                     <constraint firstAttribute="height" constant="21" id="naz-Zy-biG"/>
+                                    <constraint firstAttribute="width" constant="95" id="sCZ-0S-jli"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -399,9 +492,10 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="182" translatesAutoresizingMaskIntoConstraints="NO" id="rb7-Wt-BR5">
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="ZTe-GC-HgK"/>
                                     <constraint firstAttribute="height" constant="51" id="ysg-SX-KkD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -418,21 +512,27 @@
                             <constraint firstItem="TD9-i9-pfQ" firstAttribute="top" secondItem="77u-AU-vIV" secondAttribute="top" constant="20" symbolic="YES" type="default" id="1IF-HA-Mr5"/>
                             <constraint firstItem="RtM-lR-heE" firstAttribute="leading" secondItem="77u-AU-vIV" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4AW-yf-6Fr"/>
                             <constraint firstItem="RtM-lR-heE" firstAttribute="top" secondItem="5uA-4i-tTE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="5PF-2U-pxb"/>
-                            <constraint firstItem="TD9-i9-pfQ" firstAttribute="leading" secondItem="77u-AU-vIV" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="M1N-FN-5ZM"/>
+                            <constraint firstItem="5uA-4i-tTE" firstAttribute="leading" secondItem="TD9-i9-pfQ" secondAttribute="leading" type="default" id="BWw-vU-CcS"/>
+                            <constraint firstItem="rb7-Wt-BR5" firstAttribute="leading" secondItem="5uA-4i-tTE" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="TWS-Zo-5PN"/>
                             <constraint firstAttribute="trailing" secondItem="rb7-Wt-BR5" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="XgG-vR-Iu0"/>
-                            <constraint firstItem="rb7-Wt-BR5" firstAttribute="leading" secondItem="TD9-i9-pfQ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="a54-Wz-WgK"/>
-                            <constraint firstItem="rb7-Wt-BR5" firstAttribute="leading" secondItem="5uA-4i-tTE" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="hyu-ww-Fh9"/>
                             <constraint firstItem="5uA-4i-tTE" firstAttribute="top" secondItem="TD9-i9-pfQ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kFB-n8-OIG"/>
                             <constraint firstItem="5uA-4i-tTE" firstAttribute="baseline" secondItem="rb7-Wt-BR5" secondAttribute="baseline" type="default" id="mDs-Jo-w7F"/>
                             <constraint firstAttribute="bottom" secondItem="RtM-lR-heE" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="ngb-ZC-gFs"/>
-                            <constraint firstItem="5uA-4i-tTE" firstAttribute="leading" secondItem="77u-AU-vIV" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="tSI-w6-26A"/>
+                            <constraint firstItem="rb7-Wt-BR5" firstAttribute="leading" secondItem="TD9-i9-pfQ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="vET-jd-TRd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Полёт" id="bV3-QH-yS4"/>
+                    <navigationItem key="navigationItem" title="Flight" id="bV3-QH-yS4">
+                        <barButtonItem key="rightBarButtonItem" title="Plane" id="I25-1h-3uh">
+                            <connections>
+                                <segue destination="TV9-oz-jGC" kind="push" identifier="ShowPlaneOfFlight" id="pMp-41-Dnw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="descriptionText" destination="RtM-lR-heE" id="fFb-L6-e9T"/>
                         <outlet property="endTimeLabel" destination="5uA-4i-tTE" id="rJu-Gg-NGW"/>
                         <outlet property="nameLabel" destination="rb7-Wt-BR5" id="ESj-uh-QMC"/>
+                        <outlet property="planeButton" destination="I25-1h-3uh" id="Acl-Ff-MNd"/>
                         <outlet property="startTimeLabel" destination="TD9-i9-pfQ" id="bxC-gM-Lk0"/>
                     </connections>
                 </viewController>
@@ -453,6 +553,7 @@
                     <connections>
                         <segue destination="xF1-MJ-XKv" kind="relationship" relationship="viewControllers" id="bB8-f3-yKc"/>
                         <segue destination="A2Y-Nb-pza" kind="relationship" relationship="viewControllers" id="SRM-Il-FPb"/>
+                        <segue destination="Kmh-Wk-xgC" kind="relationship" relationship="viewControllers" id="g3J-oF-FTD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
@@ -461,8 +562,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="16" height="16"/>
-        <image name="second" width="16" height="16"/>
+        <image name="LII.png" width="800" height="551"/>
+        <image name="about_icon" width="16" height="16"/>
+        <image name="flights_icon" width="16" height="16"/>
+        <image name="static_icon" width="16" height="16"/>
     </resources>
     <classes>
         <class className="ASExpoView" superclassName="UIView">
@@ -481,6 +584,7 @@
                 <relationship kind="outlet" name="descriptionText" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="endTimeLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="planeButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="startTimeLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -525,5 +629,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="cSX-xZ-DBX"/>
+        <segue reference="YgI-GG-svg"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASPlaneDetailsViewController : UIViewController
+@interface ASPlaneDetailsViewController : UIViewController <UIWebViewDelegate>
 
 @property (nonatomic, strong) NSString *planeName;
 @property (nonatomic, strong) NSString *descriptionFile;
