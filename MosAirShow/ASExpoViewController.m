@@ -12,6 +12,7 @@
 #import "ASPlanesModel.h"
 #import "ASPlanesSection.h"
 #import "ASPlane.h"
+#import "ASPoint.h"
 #import "ASPlanesViewController.h"
 #import "ASPlaneDetailsViewController.h"
 #import "Reachability.h"
@@ -32,6 +33,10 @@
 @property (weak, nonatomic) ASExpoItemView *selectedItemView;
 @property (strong, nonatomic) Reachability *reach;
 @property (strong, nonatomic) NSDate *lastFileUpdate;
+@property (nonatomic, strong) CLLocationManager* locationManager;
+@property (nonatomic, strong) ASPoint *userLocation;
+@property (nonatomic, weak) UIImageView *userLocationView;
+@property (nonatomic) CGRect lastViewBounds;
 
 @end
 
@@ -40,10 +45,22 @@
 @synthesize planes = _planes;
 @synthesize selectedItemView = _selectedItemView;
 
+- (CLLocationManager*) locationManager
+{
+    if (!_locationManager) {
+        _locationManager = [[CLLocationManager alloc]init];
+        _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        _locationManager.delegate = self;
+        _locationManager.distanceFilter = 5;
+    }
+    return _locationManager;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.lastViewBounds = CGRectMake(0, 0, 0, 0);
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -73,7 +90,9 @@
         }
     }
     self.planes = fileExpo;
+    self.userLocation = [[ASPoint alloc] initWithX:-100 andY:-100];
     [self updateExpoItems];
+    [self.locationManager startUpdatingLocation];
     
     // Initiate async update of the expo definition from server
     NSDateComponents *comps = [[NSDateComponents alloc] init];
@@ -92,14 +111,26 @@
 
 -(void)updateExpoItems
 {
+    CGRect viewRect = self.view.bounds;
+    if (self.lastViewBounds.origin.x == viewRect.origin.x &&
+        self.lastViewBounds.origin.y == viewRect.origin.y &&
+        self.lastViewBounds.size.width == viewRect.size.width &&
+        self.lastViewBounds.size.height == viewRect.size.height) {
+        NSLog(@"Bounds are the same");
+        [self updateUserLocationView];
+        return;
+    }
+
     // Remove all currently visible expo items
     for (UIView *item in self.scrollView.subviews) {
-        [item removeFromSuperview];
+        if ([item isKindOfClass:[ASExpoItemView class]]) {
+            [(ASExpoItemView*)item removeFromSuperview];
+        }
     }
     
     // Set the scrolling area
     CGSize expoSize = self.planes.bounds;
-    CGRect viewRect = self.view.bounds;
+    self.lastViewBounds = viewRect;
     float k = expoSize.width / viewRect.size.width;
     self.scrollView.contentSize = CGSizeMake(viewRect.size.width, expoSize.height / k);
     self.scrollView.backgroundColor = [UIColor lightGrayColor];
@@ -109,12 +140,35 @@
         for (ASPlane *plane in section.planes) {
             if (!plane.isVisible) continue;
             CGRect itemRect = CGRectMake(plane.screenRect.origin.x / k, plane.screenRect.origin.y / k, plane.screenRect.size.width / k, plane.screenRect.size.height / k);
+            //NSLog(@"plane '%@' at %f:%f:%f:%f", plane.name, itemRect.origin.x, itemRect.origin.y, itemRect.size.width, itemRect.size.height);
             ASExpoItemView *itemView = [[ASExpoItemView alloc] initWithFrame:itemRect modifier:k andPlane:plane];
             itemView.opaque = NO;
             itemView.delegate = self;
             [self.scrollView addSubview:itemView];
         }
     }
+    [self updateUserLocationView];
+}
+
+-(void)updateUserLocationView
+{
+    NSLog(@"User location on screen: %f - %f", self.userLocation.x, self.userLocation.y);
+    if (!self.userLocationView) {
+        UIImage *locationIcon = [UIImage imageNamed:@"location-icon.png"];
+        UIImageView *locationView = [[UIImageView alloc] initWithImage:locationIcon];
+        locationView.frame = CGRectMake(-100, -100, 14, 20);
+        [self.scrollView addSubview:locationView];
+        self.userLocationView = locationView;
+    }
+    CGSize expoSize = self.planes.bounds;
+    CGRect viewRect = self.view.bounds;
+    float k = expoSize.width / viewRect.size.width;
+
+    CGRect newLocation = self.userLocationView.frame;
+    newLocation.origin.x = self.userLocation.x / k - 7;
+    newLocation.origin.y = self.userLocation.y / k - 20;
+    self.userLocationView.frame = newLocation;
+    [self.scrollView bringSubviewToFront:self.userLocationView];
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -144,6 +198,9 @@
 
 -(void)expoItemAction:(ASExpoItemView *)item
 {
+    if (item.plane.descriptionFile.length == 0) {
+        return;
+    }
     self.selectedItemView = item;
     [self performSegueWithIdentifier:@"ShowPlaneDetails" sender:self];
 }
@@ -237,5 +294,24 @@
         dataFileConnection = nil;
     }
 }
+
+#pragma mark - CLLocationManagerDelegate
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation* location = [locations objectAtIndex:locations.count - 1];
+    self.userLocation = [self.planes transformGpsToModel:location.coordinate];
+    [self updateUserLocationView];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    if (error.code == kCLErrorLocationUnknown) {
+        // ignore
+    }
+    else if (error.code == kCLErrorDenied) {
+        [self.locationManager stopUpdatingLocation];
+    }
+}
+
 
 @end

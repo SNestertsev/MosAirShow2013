@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ASExpoItemView.h"
 
-@interface ASExpoViewController : UIViewController <ASExpoItemDelegate> {
+@interface ASExpoViewController : UIViewController <ASExpoItemDelegate, CLLocationManagerDelegate> {
     NSURLConnection *versionsFileConnection;
     NSURLConnection *dataFileConnection;
     NSURL *theURL;

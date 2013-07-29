@@ -1,116 +1,812 @@
 {
-    "expoVersion" : "14",
+    "expoVersion" : "21",
     "expoDate" : "2013-06-30",
-    "boundsWidth" : "1000",
-    "boundsHeight" : "10000",
+    "boundsWidth" : "110",
+    "boundsHeight" : "1000",
     "sections" :
     [
-        {
-            "name" : "Антонов",
-            "index" : "Ан",
-            "planes" :
-            [
-                {
-                 "name" : "Ан-124-100",
-                 "labelCorner" : "3",
-                 "rectTop" : "0",
-                 "rectLeft" : "500",
-                 "rectWidth" : "500",
-                 "rectHeight" : "525",
-                 "imageFile" : "Images/An-124.png",
-                 "flipImage" : "1",
-                 "description" : "Descriptions/An-124.htm"
-                 },
-             {
-             "name" : "Ан-225",
-             "labelCorner" : "3",
-             "rectTop" : "1050",
-             "rectLeft" : "500",
-             "rectWidth" : "500",
-             "rectHeight" : "500",
-             "imageFile" : "Images/An-225.png",
-             "flipImage" : "1",
-             "description" : "Descriptions/An-225.htm"
-             }
-            ]
-         },
-         {
-            "name" : "Ильюшин",
-            "index" : "Ил",
-            "planes" :
-            [
-             {
-                "name" : "Ил-96-400Т",
-                "labelCorner" : "3",
-                "rectTop" : "530",
-                "rectLeft" : "550",
-                "rectWidth" : "450",
-                "rectHeight" : "500",
-                "imageFile" : "Images/Il-96.png",
-                "flipImage" : "1",
-                "description" : "Descriptions/Il-96-400T.htm"
-             }
-            ]
-         },
-         {
-            "name" : "Сухой",
-            "index" : "Су",
-            "planes" :
-            [
-                {
-                "name" : "Су-35",
-                "labelCorner" : "2",
-                "rectTop" : "0",
-                "rectLeft" : "0",
-                "rectWidth" : "500",
-                "rectHeight" : "230",
-                "imageFile" : "Images/Su-35.png",
-                "flipImage" : "0",
-                "description" : "Descriptions/Su-35.htm",
-                "rightMargin" : "200"
-                },
-             {
-             "name" : "Су-35",
-             "labelCorner" : "2",
-             "rectTop" : "230",
-             "rectLeft" : "0",
-             "rectWidth" : "500",
-             "rectHeight" : "230",
-             "imageFile" : "Images/Su-35.png",
-             "flipImage" : "0",
-             "description" : "Descriptions/Su-35.htm",
-             "rightMargin" : "200"
-             },
-             {
-             "name" : "Су-30МК-2",
-             "labelCorner" : "2",
-             "rectTop" : "460",
-             "rectLeft" : "0",
-             "rectWidth" : "500",
-             "rectHeight" : "230",
-             "imageFile" : "Images/Su-35.png",
-             "flipImage" : "0",
-             "description" : "Descriptions/Su-30MK.htm",
-             "rightMargin" : "200"
-             },
-             {
-             "name" : "Су-32",
-             "labelCorner" : "2",
-             "rectTop" : "690",
-             "rectLeft" : "0",
-             "rectWidth" : "500",
-             "rectHeight" : "230",
-             "imageFile" : "Images/Su-35.png",
-             "flipImage" : "0",
-             "description" : "Descriptions/Su-32.htm",
-             "rightMargin" : "200"
-             },
-             ]
-        }
-    ],
+     {
+     "name" : "Правый край",
+     "index" : "Пк",
+     "planes" :
+     [
+      {
+      "name" : "С-295 Casa",
+      "labelCorner" : "3",
+      "rectTop" : "0",
+      "rectHeight" : "28",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Casa.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Casa.htm"
+      },
+      {
+      "name" : "A-380",
+      "labelCorner" : "3",
+      "rectTop" : "28",
+      "rectHeight" : "80",
+      "rectLeft" : "40",
+      "rectWidth" : "70",
+      "imageFile" : "Images/A-380.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/A-380.htm"
+      },
+      {
+      "name" : "Вход №1",
+      "labelCorner" : "3",
+      "rectTop" : "108",
+      "rectHeight" : "30",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "imageFile" : "",
+      "flipImage" : "0",
+      "description" : ""
+      },
+      {
+      "name" : "Ил-76МФ",
+      "labelCorner" : "3",
+      "rectTop" : "140",
+      "rectHeight" : "45",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Il-76MD-90.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Il-76MF.htm"
+      },
+      {
+      "name" : "Ту-204СМ",
+      "labelCorner" : "3",
+      "rectTop" : "185",
+      "rectHeight" : "40",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Tu-204-300A.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Tu-204SM.htm"
+      },
+      {
+      "name" : "Ту-214ОН",
+      "labelCorner" : "3",
+      "rectTop" : "225",
+      "rectHeight" : "40",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Tu-214.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Tu-214.htm"
+      },
+      {
+      "name" : "L-39",
+      "labelCorner" : "3",
+      "rectTop" : "265",
+      "rectHeight" : "18",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/L-39C.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/L-39.htm"
+      },
+      {
+      "name" : "Ил-114ЛЛ",
+      "labelCorner" : "3",
+      "rectTop" : "283",
+      "rectHeight" : "30",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Il-114.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Il-114.htm"
+      },
+      {
+      "name" : "Ту-154М",
+      "labelCorner" : "3",
+      "rectTop" : "315",
+      "rectHeight" : "40",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Tu-154.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/.htm"
+      },
+      {
+      "name" : "Су-27",
+      "labelCorner" : "3",
+      "rectTop" : "355",
+      "rectHeight" : "15",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Su-35.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Su-27.htm"
+      },
+      {
+      "name" : "МиГ-29УВ",
+      "labelCorner" : "3",
+      "rectTop" : "370",
+      "rectHeight" : "15",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Mig-29.png",
+      "flipImage" : "1",
+      "description" : ""
+      },
+      {
+      "name" : "Ан-26",
+      "labelCorner" : "3",
+      "rectTop" : "385",
+      "rectHeight" : "30",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/An-24.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/An-26.htm"
+      },
+      {
+      "name" : "Ил-103",
+      "labelCorner" : "3",
+      "rectTop" : "415",
+      "rectHeight" : "11",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "leftMargin" : "10",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Il-103.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/.htm"
+      },
+      {
+      "name" : "Bombardier Q400",
+      "labelCorner" : "3",
+      "rectTop" : "426",
+      "rectHeight" : "29",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Q400.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Bombardier Q400.htm"
+      },
+      {
+      "name" : "Ан-158",
+      "labelCorner" : "3",
+      "rectTop" : "455",
+      "rectHeight" : "29",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "imageFile" : "Images/An-158.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/An-158.htm"
+      },
+      {
+      "name" : "Выход №2",
+      "labelCorner" : "3",
+      "rectTop" : "544",
+      "rectHeight" : "40",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "imageFile" : "",
+      "flipImage" : "0",
+      "description" : ""
+      },
+      {
+      "name" : "Ми-8АМТШ",
+      "labelCorner" : "3",
+      "rectTop" : "584",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Mi-8T.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Mi-8.htm"
+      },
+      {
+      "name" : "Ми-171 (VIP)",
+      "labelCorner" : "3",
+      "rectTop" : "604",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Mi-17.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Mi-171.htm"
+      },
+      {
+      "name" : "Ми-171А2",
+      "labelCorner" : "3",
+      "rectTop" : "624",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Mi-17.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Mi-171.htm"
+      },
+      {
+      "name" : "Ми-28НЭ",
+      "labelCorner" : "3",
+      "rectTop" : "644",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Mi-28N.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Mi-28N.htm"
+      },
+      {
+      "name" : "Ми-35М",
+      "labelCorner" : "3",
+      "rectTop" : "664",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Mi-35.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Mi-35.htm"
+      },
+      {
+      "name" : "Ка-226Т",
+      "labelCorner" : "3",
+      "rectTop" : "684",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Ka-226.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Ka-226.htm"
+      },
+      {
+      "name" : "Ка-52",
+      "labelCorner" : "3",
+      "rectTop" : "704",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Ka-52.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Ka-52.htm"
+      },
+      {
+      "name" : "Ка-62",
+      "labelCorner" : "3",
+      "rectTop" : "724",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Ka-62.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Ka-62.htm"
+      },
+      {
+      "name" : "Ми-38-2",
+      "labelCorner" : "3",
+      "rectTop" : "744",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Mi-38.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Mi-38.htm"
+      },
+      {
+      "name" : "Ка-32",
+      "labelCorner" : "3",
+      "rectTop" : "764",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Ka-32A11.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Ka-32A11.htm"
+      },
+      {
+      "name" : "Ми-26",
+      "labelCorner" : "3",
+      "rectTop" : "784",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Mi-26.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Mi-26.htm"
+      },
+      {
+      "name" : "Ми-17В-5",
+      "labelCorner" : "3",
+      "rectTop" : "804",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Mi-17.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Mi-17V-5.htm"
+      },
+      {
+      "name" : "Ансат-макет",
+      "labelCorner" : "3",
+      "rectTop" : "824",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Ansant.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Ansat.htm"
+      },
+      {
+      "name" : "Ансат-У",
+      "labelCorner" : "3",
+      "rectTop" : "844",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Ansant-U.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Ansat-U.htm"
+      },
+      {
+      "name" : "Agusta Grand",
+      "labelCorner" : "3",
+      "rectTop" : "864",
+      "rectHeight" : "16",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Agusta Grand.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Augusta Grand.htm"
+      },
+      {
+      "name" : "AW139",
+      "labelCorner" : "3",
+      "rectTop" : "880",
+      "rectHeight" : "17",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/AW139.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/AW139.htm"
+      },
+      {
+      "name" : "МСБ-2",
+      "labelCorner" : "3",
+      "rectTop" : "900",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "imageFile" : "Images/MSB-2.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/MSB-2.htm"
+      },
+      {
+      "name" : "МиГ-15",
+      "labelCorner" : "3",
+      "rectTop" : "920",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Mig-15.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Mig-15.htm"
+      },
+      {
+      "name" : "Як-40",
+      "labelCorner" : "3",
+      "rectTop" : "940",
+      "rectHeight" : "20",
+      "rectLeft" : "74",
+      "rectWidth" : "36",
+      "rightMargin" : "15",
+      "imageFile" : "Images/Yak-40.png",
+      "flipImage" : "1",
+      "description" : "Descriptions/Yak-40.htm"
+      },
+      {
+      "name" : "Вход №3",
+      "labelCorner" : "3",
+      "rectTop" : "960",
+      "rectHeight" : "20",
+      "rectLeft" : "30",
+      "rectWidth" : "36",
+      "imageFile" : "",
+      "flipImage" : "0",
+      "description" : ""
+      }
+      ]
+     },
+     
+     
+     
+     
+     
+     {
+     "name" : "Левый край",
+     "index" : "Лк",
+     "planes" :
+     [
+      {
+      "name" : "SSJ-100",
+      "labelCorner" : "2",
+      "rectTop" : "108",
+      "rectHeight" : "30",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/RRJ-95.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/RRJ-95.htm"
+      },
+      {
+      "name" : "Су-35",
+      "labelCorner" : "2",
+      "rectTop" : "140",
+      "rectHeight" : "22",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Su-35.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Su-35.htm"
+      },
+      {
+      "name" : "Су-30МК2",
+      "labelCorner" : "2",
+      "rectTop" : "162",
+      "rectHeight" : "22",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Su-35.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Su-30MK2.htm"
+      },
+      {
+      "name" : "МиГ-29СМТ",
+      "labelCorner" : "2",
+      "rectTop" : "184",
+      "rectHeight" : "20",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Mig-29.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Mig-29SMT.htm"
+      },
+      {
+      "name" : "МиГ-29КУВ",
+      "labelCorner" : "2",
+      "rectTop" : "204",
+      "rectHeight" : "20",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Mig-29.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Mig-29K.htm"
+      },
+      {
+      "name" : "МиГ-29М2",
+      "labelCorner" : "2",
+      "rectTop" : "224",
+      "rectHeight" : "20",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Mig-29.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Mig-29M2.htm"
+      },
+      {
+      "name" : "МиГ-31БМ",
+      "labelCorner" : "2",
+      "rectTop" : "244",
+      "rectHeight" : "20",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Mig-31BM.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Mig-31BM.htm"
+      },
+      {
+      "name" : "МиГ-29СМТ",
+      "labelCorner" : "2",
+      "rectTop" : "264",
+      "rectHeight" : "20",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Mig-29.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Mig-29SMT.htm"
+      },
+      {
+      "name" : "Су-35С",
+      "labelCorner" : "2",
+      "rectTop" : "284",
+      "rectHeight" : "20",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Su-35.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Su-35.htm"
+      },
+      {
+      "name" : "Су-27СМ",
+      "labelCorner" : "2",
+      "rectTop" : "304",
+      "rectHeight" : "20",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Su-35.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Su-27SM.htm"
+      },
+      {
+      "name" : "Су-30М2",
+      "labelCorner" : "2",
+      "rectTop" : "324",
+      "rectHeight" : "20",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Su-35.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Su-30M2.htm"
+      },
+      {
+      "name" : "Су-30СМ",
+      "labelCorner" : "2",
+      "rectTop" : "344",
+      "rectHeight" : "20",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Su-35.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Su-30SM.htm"
+      },
+      {
+      "name" : "Су-34",
+      "labelCorner" : "2",
+      "rectTop" : "364",
+      "rectHeight" : "20",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Su-35.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Su-34.htm"
+      },
+      {
+      "name" : "Су-25СМ",
+      "labelCorner" : "2",
+      "rectTop" : "384",
+      "rectHeight" : "15",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Su-25SM.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Su-25.htm"
+      },
+      {
+      "name" : "Як-130",
+      "labelCorner" : "2",
+      "rectTop" : "399",
+      "rectHeight" : "11",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Yak-130.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Yak-130.htm"
+      },
+      {
+      "name" : "Ми-26",
+      "labelCorner" : "2",
+      "rectTop" : "410",
+      "rectHeight" : "40",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Mi-26.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Mi-26.htm"
+      },
+      {
+      "name" : "Ми-8АМТШ",
+      "labelCorner" : "2",
+      "rectTop" : "450",
+      "rectHeight" : "25",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Mi-8T.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Mi-8.htm"
+      },
+      {
+      "name" : "Ми-28Н",
+      "labelCorner" : "2",
+      "rectTop" : "475",
+      "rectHeight" : "15",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Mi-28N.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Mi-28N.htm"
+      },
+      {
+      "name" : "Ка-52",
+      "labelCorner" : "2",
+      "rectTop" : "490",
+      "rectHeight" : "25",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Ka-52.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Ka-52.htm"
+      },
+      {
+      "name" : "Ка-226",
+      "labelCorner" : "2",
+      "rectTop" : "515",
+      "rectHeight" : "25",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Ka-226.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Ka-226.htm"
+      },
+      {
+      "name" : "Ансат-У",
+      "labelCorner" : "2",
+      "rectTop" : "540",
+      "rectHeight" : "25",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Ansant-U.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Ansat-U.htm"
+      },
+      {
+      "name" : "Рысачок",
+      "labelCorner" : "2",
+      "rectTop" : "565",
+      "rectHeight" : "20",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Rysachok.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Rysachok.htm"
+      },
+      {
+      "name" : "А-50",
+      "labelCorner" : "2",
+      "rectTop" : "585",
+      "rectHeight" : "40",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/A-50.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/A-50.htm"
+      },
+      {
+      "name" : "Ту-160",
+      "labelCorner" : "2",
+      "rectTop" : "625",
+      "rectHeight" : "40",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Tu-160.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Tu-160.htm"
+      },
+      {
+      "name" : "Ту-95МС",
+      "labelCorner" : "2",
+      "rectTop" : "665",
+      "rectHeight" : "40",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Tu-95MS.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Tu-95MS.htm"
+      },
+      {
+      "name" : "Ту-144",
+      "labelCorner" : "2",
+      "rectTop" : "705",
+      "rectHeight" : "40",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Tu-144.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Tu-144.htm"
+      },
+      {
+      "name" : "Ил-14Т",
+      "labelCorner" : "2",
+      "rectTop" : "745",
+      "rectHeight" : "32",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Il-14T.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Il-14T.htm"
+      },
+      {
+      "name" : "L-29",
+      "labelCorner" : "2",
+      "rectTop" : "777",
+      "rectHeight" : "10",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "leftMargin" : "15",
+      "imageFile" : "Images/L-29.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/L-29.htm"
+      },
+      {
+      "name" : "L-29",
+      "labelCorner" : "2",
+      "rectTop" : "787",
+      "rectHeight" : "10",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "leftMargin" : "15",
+      "imageFile" : "Images/L-29.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/L-29.htm"
+      },
+      {
+      "name" : "Як-40К",
+      "labelCorner" : "2",
+      "rectTop" : "797",
+      "rectHeight" : "25",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "leftMargin" : "15",
+      "imageFile" : "Images/Yak-40.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Yak-40.htm"
+      },
+      {
+      "name" : "Ту-134",
+      "labelCorner" : "2",
+      "rectTop" : "860",
+      "rectHeight" : "30",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/Tu-134.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Tu-134.htm"
+      },
+      {
+      "name" : "ВМ-Т",
+      "labelCorner" : "2",
+      "rectTop" : "890",
+      "rectHeight" : "50",
+      "rectLeft" : "0",
+      "rectWidth" : "36",
+      "imageFile" : "Images/VM-T.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/VM-T.htm"
+      }
+      ]
+     }
+     ],
+    
+    
+    
+    
+    
     "gpsBindings" :
     [
-        {
+     {
      "modelRegion" :
      [
       {
@@ -118,37 +814,121 @@
       "pointY" : "0"
       },
       {
+      "pointX" : "0",
+      "pointY" : "1500"
+      },
+      {
+      "pointX" : "1000",
+      "pointY" : "1500"
+      },
+      {
       "pointX" : "1000",
       "pointY" : "0"
-      },
-      {
-      "pointX" : "1000",
-      "pointY" : "1000"
-      },
-      {
-      "pointX" : "0",
-      "pointY" : "1000"
       }
-     ],
+      ],
      "gpsRegion" :
      [
       {
-      "pointX" : "0",
-      "pointY" : "0"
+      "pointX" : "38.1312",
+      "pointY" : "55.5658"
       },
       {
-      "pointX" : "1000",
-      "pointY" : "0"
+      "pointX" : "38.1324",
+      "pointY" : "55.56736"
       },
       {
-      "pointX" : "1000",
-      "pointY" : "1000"
+      "pointX" : "38.1313",
+      "pointY" : "55.56815"
       },
       {
-      "pointX" : "0",
-      "pointY" : "1000"
+      "pointX" : "38.13",
+      "pointY" : "55.5658"
       }
+      ]
+     },
+     {
+     "modelRegion" :
+     [
+      {
+      "pointX" : "0",
+      "pointY" : "1500"
+      },
+      {
+      "pointX" : "0",
+      "pointY" : "1750"
+      },
+      {
+      "pointX" : "1000",
+      "pointY" : "1750"
+      },
+      {
+      "pointX" : "1000",
+      "pointY" : "1500"
+      }
+      ],
+     "gpsRegion" :
+     [
+      {
+      "pointX" : "38.1324",
+      "pointY" : "55.56736"
+      },
+      {
+      "pointX" : "38.1326",
+      "pointY" : "55.5675"
+      },
+      {
+      "pointX" : "38.1328",
+      "pointY" : "55.56815"
+      },
+      {
+      "pointX" : "38.1313",
+      "pointY" : "55.56815"
+      }
+      ]
+     },
+     {
+     "modelRegion" :
+     [
+      {
+      "pointX" : "0",
+      "pointY" : "1750"
+      },
+      {
+      "pointX" : "0",
+      "pointY" : "12500"
+      },
+      {
+      "pointX" : "1000",
+      "pointY" : "12500"
+      },
+      {
+      "pointX" : "1000",
+      "pointY" : "1750"
+      }
+      ],
+     "gpsRegion" :
+     [
+      {
+      "pointX" : "38.1326",
+      "pointY" : "55.5675"
+      },
+      {
+      "pointX" : "38.153",
+      "pointY" : "55.5676"
+      },
+      {
+      "pointX" : "38.153",
+      "pointY" : "55.56832"
+      },
+      {
+      "pointX" : "38.1328",
+      "pointY" : "55.56815"
+      }
+      ]
+     }
+     
      ]
-        }
-    ]
 }
+
+
+

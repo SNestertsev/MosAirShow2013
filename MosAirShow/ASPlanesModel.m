@@ -10,6 +10,7 @@
 #import "ASPlanesSection.h"
 #import "ASPlane.h"
 #import "ASGpsBinding.h"
+#import "ASPoint.h"
 
 #define kExpoVersionAttribute @"expoVersion"
 #define kExpoDateAttribute @"expoDate"
@@ -103,5 +104,16 @@
     }
     return CGRectMake(x, y, width, height);
 }
+
+-(ASPoint *)transformGpsToModel:(CLLocationCoordinate2D)coordinate
+{    
+    for (ASGpsBinding *binding in self.gpsBindings) {
+        if ([binding containsGpsPoint:coordinate]) {
+            return [binding transformGpsToModel:coordinate];
+        }
+    }
+    return [[ASPoint alloc] initWithX:-100 andY:-100];
+}
+
 
 @end

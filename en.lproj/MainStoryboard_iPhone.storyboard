@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -127,98 +127,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4G-ag-mqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="609" y="-885"/>
-        </scene>
-        <!--View Controller - About-->
-        <scene sceneID="g3k-3n-poR">
-            <objects>
-                <viewController id="Kmh-Wk-xgC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9WH-wx-z3u">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LII.png" translatesAutoresizingMaskIntoConstraints="NO" id="fQD-Q8-mmH">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="89" id="cOO-Qm-KUO"/>
-                                    <constraint firstAttribute="width" constant="124" id="zqv-Zu-UNe"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ОАО &quot;ЛИИ им. Громова&quot;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gES-V7-4bH">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Project manager" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5N-GP-BJz">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="WUR-eq-P74"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nestertseva Irene" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20x-tY-YCN">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lead developer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjN-5o-Uza">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="RrF-JO-pH0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nestertsev Sergey" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQx-tT-vCo">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Photos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc5-Ks-Nfu">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="ruN-dl-q02"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gribovsky Mikhail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0H-Qu-uZx">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="W0H-Qu-uZx" firstAttribute="top" secondItem="Pc5-Ks-Nfu" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="0Zt-uS-dgA"/>
-                            <constraint firstItem="20x-tY-YCN" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="43e-95-hdS"/>
-                            <constraint firstItem="Pc5-Ks-Nfu" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4su-mT-KQC"/>
-                            <constraint firstAttribute="trailing" secondItem="I5N-GP-BJz" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8GQ-AK-s57"/>
-                            <constraint firstItem="vjN-5o-Uza" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="8Zi-ga-Oif"/>
-                            <constraint firstItem="vjN-5o-Uza" firstAttribute="top" secondItem="20x-tY-YCN" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="9t9-Vs-S8D"/>
-                            <constraint firstAttribute="trailing" secondItem="W0H-Qu-uZx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="F4P-nO-i9h"/>
-                            <constraint firstAttribute="trailing" secondItem="20x-tY-YCN" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="H51-eD-nlu"/>
-                            <constraint firstItem="GQx-tT-vCo" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="HZu-SH-iXL"/>
-                            <constraint firstAttribute="trailing" secondItem="gES-V7-4bH" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="JBS-e1-7KH"/>
-                            <constraint firstAttribute="trailing" secondItem="vjN-5o-Uza" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Kmg-cf-cWf"/>
-                            <constraint firstItem="I5N-GP-BJz" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Lhf-Dx-jdM"/>
-                            <constraint firstItem="Pc5-Ks-Nfu" firstAttribute="top" secondItem="GQx-tT-vCo" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="MaP-JN-zIU"/>
-                            <constraint firstItem="fQD-Q8-mmH" firstAttribute="top" secondItem="9WH-wx-z3u" secondAttribute="top" constant="20" symbolic="YES" type="default" id="SDI-zi-rnB"/>
-                            <constraint firstItem="fQD-Q8-mmH" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SIR-YD-all"/>
-                            <constraint firstAttribute="trailing" secondItem="Pc5-Ks-Nfu" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="XaI-PX-mDZ"/>
-                            <constraint firstItem="GQx-tT-vCo" firstAttribute="top" secondItem="vjN-5o-Uza" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Xdz-hU-gna"/>
-                            <constraint firstItem="W0H-Qu-uZx" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="jZX-rH-a1S"/>
-                            <constraint firstItem="gES-V7-4bH" firstAttribute="leading" secondItem="9WH-wx-z3u" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lzL-Yn-uwY"/>
-                            <constraint firstItem="20x-tY-YCN" firstAttribute="top" secondItem="I5N-GP-BJz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="mvp-N0-xjA"/>
-                            <constraint firstItem="gES-V7-4bH" firstAttribute="top" secondItem="fQD-Q8-mmH" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="nJb-iU-6MD"/>
-                            <constraint firstItem="I5N-GP-BJz" firstAttribute="top" secondItem="9WH-wx-z3u" secondAttribute="top" constant="162" id="qu6-Aa-EQh"/>
-                            <constraint firstAttribute="trailing" secondItem="GQx-tT-vCo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="sJu-t0-Ya7"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="About" image="about_icon" id="TPb-CC-fn8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SlF-6F-KRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="72" y="-55"/>
         </scene>
         <!--Navigation Controller - Flights-->
         <scene sceneID="9M4-aD-tcY">
@@ -553,7 +461,6 @@
                     <connections>
                         <segue destination="xF1-MJ-XKv" kind="relationship" relationship="viewControllers" id="bB8-f3-yKc"/>
                         <segue destination="A2Y-Nb-pza" kind="relationship" relationship="viewControllers" id="SRM-Il-FPb"/>
-                        <segue destination="Kmh-Wk-xgC" kind="relationship" relationship="viewControllers" id="g3J-oF-FTD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
@@ -562,8 +469,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LII.png" width="800" height="551"/>
-        <image name="about_icon" width="16" height="16"/>
         <image name="flights_icon" width="16" height="16"/>
         <image name="static_icon" width="16" height="16"/>
     </resources>

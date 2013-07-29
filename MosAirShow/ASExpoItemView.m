@@ -30,7 +30,7 @@
         
         if (self.plane.imageFileName.length > 0) {
             UIImage *image = [UIImage imageNamed:self.plane.imageFileName];
-            image = [ASExpoItemView imageWithShadowForImage:image andFlip:plane.flipImage];
+            //image = [ASExpoItemView imageWithShadowForImage:image andFlip:plane.flipImage];
             CGRect imageRect = CGRectMake(self.bounds.origin.x + self.plane.leftMargin / modifier, self.bounds.origin.y + self.plane.topMargin / modifier, self.bounds.size.width - self.plane.leftMargin / modifier - self.plane.rightMargin / modifier, self.bounds.size.height - self.plane.topMargin / modifier - self.plane.bottomMargin / modifier);
             self.imageView = [[UIImageView alloc] initWithFrame:imageRect];
             self.imageView.image = image;
@@ -70,7 +70,6 @@
     return self;
 }
 
-
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 /*- (void)drawRect:(CGRect)rect
@@ -96,30 +95,37 @@
 
 +(UIImage*)imageWithShadowForImage:(UIImage*)initialImage andFlip:(BOOL)flip
 {
-    float blurSize = 30.0f;
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    CGContextRef shadowContext = CGBitmapContextCreate(NULL, initialImage.size.width + blurSize * 2, initialImage.size.height + blurSize * 2, CGImageGetBitsPerComponent(initialImage.CGImage), 0, colorSpace, kCGImageAlphaPremultipliedLast);
-    CGColorSpaceRelease(colorSpace);
-    
-    if (flip) {
-        CGContextSetShadowWithColor(shadowContext, CGSizeMake(-blurSize/2, -blurSize/2), blurSize, [UIColor blackColor].CGColor);
-    }
-    else {
-        CGContextSetShadowWithColor(shadowContext, CGSizeMake(blurSize/2, -blurSize/2), blurSize, [UIColor blackColor].CGColor);
-    }
-    CGContextDrawImage(shadowContext, CGRectMake(blurSize, blurSize, initialImage.size.width, initialImage.size.height), initialImage.CGImage);
-    
-    CGImageRef shadowedCGImage = CGBitmapContextCreateImage(shadowContext);
-    CGContextRelease(shadowContext);
-    
     UIImage *shadowedImage;
-    if (flip) {
-        shadowedImage = [UIImage imageWithCGImage:shadowedCGImage scale:initialImage.scale orientation:UIImageOrientationUpMirrored];
+    @try {
+        float blurSize = 30.0f;
+        CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+        CGContextRef shadowContext = CGBitmapContextCreate(NULL, initialImage.size.width + blurSize * 2, initialImage.size.height + blurSize * 2, CGImageGetBitsPerComponent(initialImage.CGImage), 0, colorSpace, kCGImageAlphaPremultipliedLast);
+        CGColorSpaceRelease(colorSpace);
+        if (!shadowContext)
+            return nil;
+        
+        if (flip) {
+            CGContextSetShadowWithColor(shadowContext, CGSizeMake(-blurSize/2, -blurSize/2), blurSize, [UIColor blackColor].CGColor);
+        }
+        else {
+            CGContextSetShadowWithColor(shadowContext, CGSizeMake(blurSize/2, -blurSize/2), blurSize, [UIColor blackColor].CGColor);
+        }
+        CGContextDrawImage(shadowContext, CGRectMake(blurSize, blurSize, initialImage.size.width, initialImage.size.height), initialImage.CGImage);
+        
+        CGImageRef shadowedCGImage = CGBitmapContextCreateImage(shadowContext);
+        CGContextRelease(shadowContext);
+        
+        if (flip) {
+            shadowedImage = [UIImage imageWithCGImage:shadowedCGImage scale:initialImage.scale orientation:UIImageOrientationUpMirrored];
+        }
+        else {
+            shadowedImage = [UIImage imageWithCGImage:shadowedCGImage];
+        }
+        CGImageRelease(shadowedCGImage);
     }
-    else {
-        shadowedImage = [UIImage imageWithCGImage:shadowedCGImage];
+    @catch (NSException * e) {
+        NSLog(@"Exception: %@", e);
     }
-    CGImageRelease(shadowedCGImage);
     
     return shadowedImage;
 }

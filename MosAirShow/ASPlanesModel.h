@@ -10,6 +10,7 @@
 
 @class ASPlanesSection;
 @class ASPlane;
+@class ASPoint;
 
 @interface ASPlanesModel : NSObject
 
@@ -23,5 +24,6 @@
 -(id)initWithJSON:(NSDictionary *)json;
 -(ASPlanesSection*)addSectionWithName:(NSString*)name andIndex:(NSString*)index;
 -(CGRect)getBounds;
+-(ASPoint*)transformGpsToModel:(CLLocationCoordinate2D)coordinate;
 
 @end
