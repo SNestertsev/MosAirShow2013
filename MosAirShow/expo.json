@@ -1,5 +1,5 @@
 {
-    "expoVersion" : "21",
+    "expoVersion" : "27",
     "expoDate" : "2013-06-30",
     "boundsWidth" : "110",
     "boundsHeight" : "1000",
@@ -17,19 +17,19 @@
       "rectHeight" : "28",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Casa.png",
+      "rightMargin" : "13",
+      "imageFile" : "Images/Casa flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Casa.htm"
       },
       {
       "name" : "A-380",
-      "labelCorner" : "3",
+      "labelCorner" : "2",
       "rectTop" : "28",
       "rectHeight" : "80",
-      "rectLeft" : "40",
-      "rectWidth" : "70",
-      "imageFile" : "Images/A-380.png",
+      "rectLeft" : "35",
+      "rectWidth" : "75",
+      "imageFile" : "Images/A-380 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/A-380.htm"
       },
@@ -51,7 +51,7 @@
       "rectHeight" : "45",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "imageFile" : "Images/Il-76MD-90.png",
+      "imageFile" : "Images/Il-76MD-90 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Il-76MF.htm"
       },
@@ -60,9 +60,9 @@
       "labelCorner" : "3",
       "rectTop" : "185",
       "rectHeight" : "40",
-      "rectLeft" : "74",
-      "rectWidth" : "36",
-      "imageFile" : "Images/Tu-204-300A.png",
+      "rectLeft" : "73",
+      "rectWidth" : "37",
+      "imageFile" : "Images/Tu-204-300A flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Tu-204SM.htm"
       },
@@ -71,9 +71,9 @@
       "labelCorner" : "3",
       "rectTop" : "225",
       "rectHeight" : "40",
-      "rectLeft" : "74",
-      "rectWidth" : "36",
-      "imageFile" : "Images/Tu-214.png",
+      "rectLeft" : "70",
+      "rectWidth" : "40",
+      "imageFile" : "Images/Tu-214 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Tu-214.htm"
       },
@@ -84,8 +84,8 @@
       "rectHeight" : "18",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/L-39C.png",
+      "rightMargin" : "13",
+      "imageFile" : "Images/L-39C flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/L-39.htm"
       },
@@ -96,7 +96,8 @@
       "rectHeight" : "30",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "imageFile" : "Images/Il-114.png",
+      "rightMargin" : "10",
+      "imageFile" : "Images/Il-114 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Il-114.htm"
       },
@@ -105,11 +106,11 @@
       "labelCorner" : "3",
       "rectTop" : "315",
       "rectHeight" : "40",
-      "rectLeft" : "74",
-      "rectWidth" : "36",
-      "imageFile" : "Images/Tu-154.png",
+      "rectLeft" : "60",
+      "rectWidth" : "50",
+      "imageFile" : "Images/Tu-154 flip.png",
       "flipImage" : "1",
-      "description" : "Descriptions/.htm"
+      "description" : "Descriptions/Tu-154M.htm"
       },
       {
       "name" : "Су-27",
@@ -118,22 +119,22 @@
       "rectHeight" : "15",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Su-35.png",
+      "rightMargin" : "16",
+      "imageFile" : "Images/Su-35 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Su-27.htm"
       },
       {
-      "name" : "МиГ-29УВ",
+      "name" : "МиГ-29УБ",
       "labelCorner" : "3",
       "rectTop" : "370",
       "rectHeight" : "15",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Mig-29.png",
+      "rightMargin" : "14",
+      "imageFile" : "Images/Mig-29 flip.png",
       "flipImage" : "1",
-      "description" : ""
+      "description" : "Descriptions/Mig-29UB.htm"
       },
       {
       "name" : "Ан-26",
@@ -142,8 +143,8 @@
       "rectHeight" : "30",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/An-24.png",
+      "rightMargin" : "13",
+      "imageFile" : "Images/An-24 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/An-26.htm"
       },
@@ -154,20 +155,21 @@
       "rectHeight" : "11",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "leftMargin" : "10",
+      "leftMargin" : "13",
       "rightMargin" : "15",
-      "imageFile" : "Images/Il-103.png",
+      "imageFile" : "Images/Il-103 flip.png",
       "flipImage" : "1",
-      "description" : "Descriptions/.htm"
+      "description" : "Descriptions/Il-103.htm"
       },
       {
       "name" : "Bombardier Q400",
-      "labelCorner" : "3",
+      "labelCorner" : "2",
       "rectTop" : "426",
       "rectHeight" : "29",
-      "rectLeft" : "74",
+      "rectLeft" : "60",
       "rectWidth" : "36",
-      "imageFile" : "Images/Q400.png",
+      "leftMargin" : "12",
+      "imageFile" : "Images/Q400 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Bombardier Q400.htm"
       },
@@ -178,15 +180,16 @@
       "rectHeight" : "29",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "imageFile" : "Images/An-158.png",
+      "rightMargin" : "7",
+      "imageFile" : "Images/An-158 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/An-158.htm"
       },
       {
-      "name" : "Выход №2",
+      "name" : "Вход №2",
       "labelCorner" : "3",
       "rectTop" : "544",
-      "rectHeight" : "40",
+      "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
       "imageFile" : "",
@@ -200,8 +203,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Mi-8T.png",
+      "rightMargin" : "9",
+      "imageFile" : "Images/Mi-8T flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Mi-8.htm"
       },
@@ -212,8 +215,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Mi-17.png",
+      "rightMargin" : "14",
+      "imageFile" : "Images/Mi-17 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Mi-171.htm"
       },
@@ -224,8 +227,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Mi-17.png",
+      "rightMargin" : "14",
+      "imageFile" : "Images/Mi-17 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Mi-171.htm"
       },
@@ -236,8 +239,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Mi-28N.png",
+      "rightMargin" : "10",
+      "imageFile" : "Images/Mi-28N flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Mi-28N.htm"
       },
@@ -248,8 +251,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Mi-35.png",
+      "rightMargin" : "8",
+      "imageFile" : "Images/Mi-35 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Mi-35.htm"
       },
@@ -260,7 +263,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "imageFile" : "Images/Ka-226.png",
+      "rightMargin" : "14",
+      "imageFile" : "Images/Ka-226 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Ka-226.htm"
       },
@@ -271,8 +275,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Ka-52.png",
+      "rightMargin" : "11",
+      "imageFile" : "Images/Ka-52 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Ka-52.htm"
       },
@@ -283,8 +287,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Ka-62.png",
+      "rightMargin" : "14",
+      "imageFile" : "Images/Ka-62 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Ka-62.htm"
       },
@@ -295,8 +299,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Mi-38.png",
+      "rightMargin" : "10",
+      "imageFile" : "Images/Mi-38 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Mi-38.htm"
       },
@@ -307,8 +311,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Ka-32A11.png",
+      "rightMargin" : "17",
+      "imageFile" : "Images/Ka-32A11 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Ka-32A11.htm"
       },
@@ -319,8 +323,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Mi-26.png",
+      "rightMargin" : "10,5",
+      "imageFile" : "Images/Mi-26 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Mi-26.htm"
       },
@@ -331,8 +335,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Mi-17.png",
+      "rightMargin" : "13,5",
+      "imageFile" : "Images/Mi-17 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Mi-17V-5.htm"
       },
@@ -343,8 +347,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Ansant.png",
+      "rightMargin" : "17",
+      "imageFile" : "Images/Ansant flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Ansat.htm"
       },
@@ -355,8 +359,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Ansant-U.png",
+      "rightMargin" : "17",
+      "imageFile" : "Images/Ansant-U flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Ansat-U.htm"
       },
@@ -367,8 +371,8 @@
       "rectHeight" : "16",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Agusta Grand.png",
+      "rightMargin" : "16",
+      "imageFile" : "Images/Agusta Grand flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Augusta Grand.htm"
       },
@@ -379,8 +383,8 @@
       "rectHeight" : "17",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/AW139.png",
+      "rightMargin" : "11,5",
+      "imageFile" : "Images/AW139 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/AW139.htm"
       },
@@ -391,7 +395,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "imageFile" : "Images/MSB-2.png",
+      "rightMargin" : "12",
+      "imageFile" : "Images/MSB-2 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/MSB-2.htm"
       },
@@ -402,7 +407,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "imageFile" : "Images/Mig-15.png",
+      "rightMargin" : "16",
+      "imageFile" : "Images/Mig-15 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Mig-15.htm"
       },
@@ -413,8 +419,8 @@
       "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "15",
-      "imageFile" : "Images/Yak-40.png",
+      "rightMargin" : "20",
+      "imageFile" : "Images/Yak-40 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Yak-40.htm"
       },
@@ -448,6 +454,7 @@
       "rectHeight" : "30",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "3,5",
       "imageFile" : "Images/RRJ-95.png",
       "flipImage" : "0",
       "description" : "Descriptions/RRJ-95.htm"
@@ -459,6 +466,7 @@
       "rectHeight" : "22",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "7",
       "imageFile" : "Images/Su-35.png",
       "flipImage" : "0",
       "description" : "Descriptions/Su-35.htm"
@@ -470,6 +478,7 @@
       "rectHeight" : "22",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "7",
       "imageFile" : "Images/Su-35.png",
       "flipImage" : "0",
       "description" : "Descriptions/Su-30MK2.htm"
@@ -481,6 +490,7 @@
       "rectHeight" : "20",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "7",
       "imageFile" : "Images/Mig-29.png",
       "flipImage" : "0",
       "description" : "Descriptions/Mig-29SMT.htm"
@@ -492,6 +502,7 @@
       "rectHeight" : "20",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "7",
       "imageFile" : "Images/Mig-29.png",
       "flipImage" : "0",
       "description" : "Descriptions/Mig-29K.htm"
@@ -503,6 +514,7 @@
       "rectHeight" : "20",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "7",
       "imageFile" : "Images/Mig-29.png",
       "flipImage" : "0",
       "description" : "Descriptions/Mig-29M2.htm"
@@ -514,6 +526,7 @@
       "rectHeight" : "20",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "7",
       "imageFile" : "Images/Mig-31BM.png",
       "flipImage" : "0",
       "description" : "Descriptions/Mig-31BM.htm"
@@ -525,6 +538,7 @@
       "rectHeight" : "20",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "7",
       "imageFile" : "Images/Mig-29.png",
       "flipImage" : "0",
       "description" : "Descriptions/Mig-29SMT.htm"
@@ -536,6 +550,7 @@
       "rectHeight" : "20",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "10",
       "imageFile" : "Images/Su-35.png",
       "flipImage" : "0",
       "description" : "Descriptions/Su-35.htm"
@@ -547,6 +562,7 @@
       "rectHeight" : "20",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "10",
       "imageFile" : "Images/Su-35.png",
       "flipImage" : "0",
       "description" : "Descriptions/Su-27SM.htm"
@@ -569,6 +585,7 @@
       "rectHeight" : "20",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "10",
       "imageFile" : "Images/Su-35.png",
       "flipImage" : "0",
       "description" : "Descriptions/Su-30SM.htm"
@@ -580,6 +597,7 @@
       "rectHeight" : "20",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "10",
       "imageFile" : "Images/Su-35.png",
       "flipImage" : "0",
       "description" : "Descriptions/Su-34.htm"
@@ -591,6 +609,7 @@
       "rectHeight" : "15",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "20",
       "imageFile" : "Images/Su-25SM.png",
       "flipImage" : "0",
       "description" : "Descriptions/Su-25.htm"
@@ -602,6 +621,7 @@
       "rectHeight" : "11",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "24",
       "imageFile" : "Images/Yak-130.png",
       "flipImage" : "0",
       "description" : "Descriptions/Yak-130.htm"
@@ -612,7 +632,7 @@
       "rectTop" : "410",
       "rectHeight" : "40",
       "rectLeft" : "0",
-      "rectWidth" : "36",
+      "rectWidth" : "50",
       "imageFile" : "Images/Mi-26.png",
       "flipImage" : "0",
       "description" : "Descriptions/Mi-26.htm"
@@ -623,7 +643,7 @@
       "rectTop" : "450",
       "rectHeight" : "25",
       "rectLeft" : "0",
-      "rectWidth" : "36",
+      "rectWidth" : "34",
       "imageFile" : "Images/Mi-8T.png",
       "flipImage" : "0",
       "description" : "Descriptions/Mi-8.htm"
@@ -635,6 +655,7 @@
       "rectHeight" : "15",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "16",
       "imageFile" : "Images/Mi-28N.png",
       "flipImage" : "0",
       "description" : "Descriptions/Mi-28N.htm"
@@ -646,6 +667,7 @@
       "rectHeight" : "25",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "4",
       "imageFile" : "Images/Ka-52.png",
       "flipImage" : "0",
       "description" : "Descriptions/Ka-52.htm"
@@ -657,6 +679,7 @@
       "rectHeight" : "25",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "8",
       "imageFile" : "Images/Ka-226.png",
       "flipImage" : "0",
       "description" : "Descriptions/Ka-226.htm"
@@ -664,10 +687,11 @@
       {
       "name" : "Ансат-У",
       "labelCorner" : "2",
-      "rectTop" : "540",
-      "rectHeight" : "25",
+      "rectTop" : "542",
+      "rectHeight" : "20",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "7",
       "imageFile" : "Images/Ansant-U.png",
       "flipImage" : "0",
       "description" : "Descriptions/Ansat-U.htm"
@@ -679,6 +703,7 @@
       "rectHeight" : "20",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "22",
       "imageFile" : "Images/Rysachok.png",
       "flipImage" : "0",
       "description" : "Descriptions/Rysachok.htm"
@@ -700,7 +725,7 @@
       "rectTop" : "625",
       "rectHeight" : "40",
       "rectLeft" : "0",
-      "rectWidth" : "36",
+      "rectWidth" : "43",
       "imageFile" : "Images/Tu-160.png",
       "flipImage" : "0",
       "description" : "Descriptions/Tu-160.htm"
@@ -719,10 +744,10 @@
       {
       "name" : "Ту-144",
       "labelCorner" : "2",
-      "rectTop" : "705",
-      "rectHeight" : "40",
+      "rectTop" : "710",
+      "rectHeight" : "32",
       "rectLeft" : "0",
-      "rectWidth" : "36",
+      "rectWidth" : "60",
       "imageFile" : "Images/Tu-144.png",
       "flipImage" : "0",
       "description" : "Descriptions/Tu-144.htm"
@@ -734,6 +759,7 @@
       "rectHeight" : "32",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "13",
       "imageFile" : "Images/Il-14T.png",
       "flipImage" : "0",
       "description" : "Descriptions/Il-14T.htm"
@@ -746,6 +772,7 @@
       "rectLeft" : "0",
       "rectWidth" : "36",
       "leftMargin" : "15",
+      "rightMargin" : "11",
       "imageFile" : "Images/L-29.png",
       "flipImage" : "0",
       "description" : "Descriptions/L-29.htm"
@@ -758,6 +785,7 @@
       "rectLeft" : "0",
       "rectWidth" : "36",
       "leftMargin" : "15",
+      "rightMargin" : "11",
       "imageFile" : "Images/L-29.png",
       "flipImage" : "0",
       "description" : "Descriptions/L-29.htm"
@@ -769,7 +797,7 @@
       "rectHeight" : "25",
       "rectLeft" : "0",
       "rectWidth" : "36",
-      "leftMargin" : "15",
+      "leftMargin" : "16",
       "imageFile" : "Images/Yak-40.png",
       "flipImage" : "0",
       "description" : "Descriptions/Yak-40.htm"
@@ -780,7 +808,7 @@
       "rectTop" : "860",
       "rectHeight" : "30",
       "rectLeft" : "0",
-      "rectWidth" : "36",
+      "rectWidth" : "38",
       "imageFile" : "Images/Tu-134.png",
       "flipImage" : "0",
       "description" : "Descriptions/Tu-134.htm"
@@ -791,7 +819,7 @@
       "rectTop" : "890",
       "rectHeight" : "50",
       "rectLeft" : "0",
-      "rectWidth" : "36",
+      "rectWidth" : "48",
       "imageFile" : "Images/VM-T.png",
       "flipImage" : "0",
       "description" : "Descriptions/VM-T.htm"
@@ -799,9 +827,6 @@
       ]
      }
      ],
-    
-    
-    
     
     
     "gpsBindings" :
