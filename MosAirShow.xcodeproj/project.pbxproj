@@ -75,6 +75,7 @@
 		A5483040179803FF001F72C8 /* lii_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lii_icon@2x.png"; path = "../lii_icon@2x.png"; sourceTree = "<group>"; };
 		A548304517980E94001F72C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Strings.strings; sourceTree = "<group>"; };
 		A548304717980E99001F72C8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Strings.strings; sourceTree = "<group>"; };
+		A54B021A17A8F34A00F85A27 /* iTunesArtwork.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = iTunesArtwork.tiff; sourceTree = "<group>"; };
 		A558063917A0F72100A3CE83 /* CGVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGVector.h; sourceTree = "<group>"; };
 		A558063A17A0F85100A3CE83 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A558063C17A102BB00A3CE83 /* CGTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGTriangle.h; sourceTree = "<group>"; };
@@ -244,6 +245,7 @@
 				A548304617980E94001F72C8 /* Strings.strings */,
 				A5BB3EDA178D858600051D15 /* main.m */,
 				A5BB3EDC178D858600051D15 /* MosAirShow-Prefix.pch */,
+				A54B021A17A8F34A00F85A27 /* iTunesArtwork.tiff */,
 				A5483040179803FF001F72C8 /* lii_icon@2x.png */,
 				A548303E179803F2001F72C8 /* lii_icon.png */,
 				A548303C179803EB001F72C8 /* lii_icon_iphone@2x.png */,
