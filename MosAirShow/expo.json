@@ -1,5 +1,5 @@
 {
-    "expoVersion" : "35",
+    "expoVersion" : "37",
     "expoDate" : "2013-08-30",
     "boundsWidth" : "110",
     "boundsHeight" : "1000",
@@ -404,8 +404,8 @@
       "name" : "МиГ-15",
       "labelCorner" : "3",
       "rectTop" : "920",
-      "rectHeight" : "20",
-      "rectLeft" : "74",
+      "rectHeight" : "15",
+      "rectLeft" : "79",
       "rectWidth" : "36",
       "rightMargin" : "16",
       "imageFile" : "Images/Mig-15 flip.png",
@@ -574,6 +574,7 @@
       "rectHeight" : "20",
       "rectLeft" : "0",
       "rectWidth" : "36",
+      "leftMargin" : "10",
       "imageFile" : "Images/Su-35.png",
       "flipImage" : "0",
       "description" : "Descriptions/Su-30M2.htm"

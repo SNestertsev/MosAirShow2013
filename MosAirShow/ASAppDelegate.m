@@ -12,10 +12,66 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    
+    NSDate *now = [NSDate date];
+    // Устанавливаем нотификацию о начале работы МАКСа
+    NSDateComponents *compsDate = [[NSDateComponents alloc] init];
+    [compsDate setYear:2013];
+    [compsDate setMonth:8];
+    [compsDate setDay:27];
+    [compsDate setHour:8];
+    NSDate *fireDate = [[NSCalendar currentCalendar] dateFromComponents:compsDate];
+    NSComparisonResult comp = [fireDate compare:now];
+    if (comp == NSOrderedDescending) {
+        UILocalNotification* ln = [UILocalNotification new];
+        ln.alertBody = @"Сегодня МАКС-2013 открывается для специалистов";
+        ln.fireDate = fireDate;
+        ln.soundName = UILocalNotificationDefaultSoundName;
+        [[UIApplication sharedApplication] scheduleLocalNotification:ln];
+    }
+    // Нотификация о первом дне массового посещения
+    [compsDate setDay:30];
+    fireDate = [[NSCalendar currentCalendar] dateFromComponents:compsDate];
+    comp = [fireDate compare:now];
+    if (comp == NSOrderedDescending) {
+        UILocalNotification* ln = [UILocalNotification new];
+        ln.alertBody = @"Сегодня МАКС-2013 открывает свои двери для широкой публики";
+        ln.fireDate = fireDate;
+        ln.soundName = UILocalNotificationDefaultSoundName;
+        [[UIApplication sharedApplication] scheduleLocalNotification:ln];
+    }
+    // Нотификация о втором дне массового посещения
+    [compsDate setDay:31];
+    fireDate = [[NSCalendar currentCalendar] dateFromComponents:compsDate];
+    comp = [fireDate compare:now];
+    if (comp == NSOrderedDescending) {
+        UILocalNotification* ln = [UILocalNotification new];
+        ln.alertBody = @"Сегодня второй день массового посещения на МАКС-2013";
+        ln.fireDate = fireDate;
+        ln.soundName = UILocalNotificationDefaultSoundName;
+        [[UIApplication sharedApplication] scheduleLocalNotification:ln];
+    }
+    // Нотификация о заключительном дне работы выставки
+    [compsDate setMonth:9];
+    [compsDate setDay:1];
+    fireDate = [[NSCalendar currentCalendar] dateFromComponents:compsDate];
+    comp = [fireDate compare:now];
+    if (comp == NSOrderedDescending) {
+        UILocalNotification* ln = [UILocalNotification new];
+        ln.alertBody = @"Сегодня заключительный день МАКС-2013";
+        ln.fireDate = fireDate;
+        ln.soundName = UILocalNotificationDefaultSoundName;
+        [[UIApplication sharedApplication] scheduleLocalNotification:ln];
+    }
     return YES;
 }
-							
+
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    [[UIApplication sharedApplication] cancelLocalNotification:notification];
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -24,7 +80,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
