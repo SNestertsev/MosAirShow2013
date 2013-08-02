@@ -60,7 +60,12 @@
 		A5BB3F52178D8D0E00051D15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5BB3ED7178D858600051D15 /* InfoPlist.strings */; };
 		A5BB3F57178D8D7600051D15 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5BB3F53178D8D7600051D15 /* MainStoryboard_iPad.storyboard */; };
 		A5BB3F58178D8D7600051D15 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5BB3F55178D8D7600051D15 /* MainStoryboard_iPhone.storyboard */; };
-		A5CF060C17AA4826009E2569 /* iTunesArtwork.tiff in Resources */ = {isa = PBXBuildFile; fileRef = A5CF060B17AA4826009E2569 /* iTunesArtwork.tiff */; };
+		A5CF060C17AA4826009E2569 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = A5CF060B17AA4826009E2569 /* iTunesArtwork */; };
+		A5CF061417AB90D7009E2569 /* Blueprint.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5CF060F17AB90D6009E2569 /* Blueprint.jpg */; };
+		A5CF061517AB90D7009E2569 /* Paper1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5CF061017AB90D6009E2569 /* Paper1.jpg */; };
+		A5CF061617AB90D7009E2569 /* Road.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5CF061117AB90D6009E2569 /* Road.jpg */; };
+		A5CF061717AB90D7009E2569 /* you-are-here1.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CF061217AB90D6009E2569 /* you-are-here1.png */; };
+		A5CF061817AB90D7009E2569 /* you-are-here2.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CF061317AB90D6009E2569 /* you-are-here2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,7 +147,12 @@
 		A5BB3F4D178D8BDD00051D15 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A5CF060917A973E9009E2569 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		A5CF060A17A973E9009E2569 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		A5CF060B17AA4826009E2569 /* iTunesArtwork.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = iTunesArtwork.tiff; sourceTree = "<group>"; };
+		A5CF060B17AA4826009E2569 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		A5CF060F17AB90D6009E2569 /* Blueprint.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Blueprint.jpg; sourceTree = "<group>"; };
+		A5CF061017AB90D6009E2569 /* Paper1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Paper1.jpg; sourceTree = "<group>"; };
+		A5CF061117AB90D6009E2569 /* Road.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Road.jpg; sourceTree = "<group>"; };
+		A5CF061217AB90D6009E2569 /* you-are-here1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "you-are-here1.png"; sourceTree = "<group>"; };
+		A5CF061317AB90D6009E2569 /* you-are-here2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "you-are-here2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +252,11 @@
 		A5BB3ED5178D858600051D15 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A5CF060F17AB90D6009E2569 /* Blueprint.jpg */,
+				A5CF061017AB90D6009E2569 /* Paper1.jpg */,
+				A5CF061117AB90D6009E2569 /* Road.jpg */,
+				A5CF061217AB90D6009E2569 /* you-are-here1.png */,
+				A5CF061317AB90D6009E2569 /* you-are-here2.png */,
 				A546B22517A8F79F00CDFF87 /* Default.png */,
 				A546B22617A8F79F00CDFF87 /* Default@2x.png */,
 				A546B22017A8F79F00CDFF87 /* Default-568h@2x.png */,
@@ -253,7 +268,7 @@
 				A5BB3ED7178D858600051D15 /* InfoPlist.strings */,
 				A5BB3EDA178D858600051D15 /* main.m */,
 				A5BB3EDC178D858600051D15 /* MosAirShow-Prefix.pch */,
-				A5CF060B17AA4826009E2569 /* iTunesArtwork.tiff */,
+				A5CF060B17AA4826009E2569 /* iTunesArtwork */,
 				A5483040179803FF001F72C8 /* lii_icon@2x.png */,
 				A548303E179803F2001F72C8 /* lii_icon.png */,
 				A548303C179803EB001F72C8 /* lii_icon_iphone@2x.png */,
@@ -384,7 +399,12 @@
 				A546B22B17A8F79F00CDFF87 /* Default-Portrait~ipad.png in Resources */,
 				A546B22C17A8F79F00CDFF87 /* Default.png in Resources */,
 				A546B22D17A8F79F00CDFF87 /* Default@2x.png in Resources */,
-				A5CF060C17AA4826009E2569 /* iTunesArtwork.tiff in Resources */,
+				A5CF060C17AA4826009E2569 /* iTunesArtwork in Resources */,
+				A5CF061417AB90D7009E2569 /* Blueprint.jpg in Resources */,
+				A5CF061517AB90D7009E2569 /* Paper1.jpg in Resources */,
+				A5CF061617AB90D7009E2569 /* Road.jpg in Resources */,
+				A5CF061717AB90D7009E2569 /* you-are-here1.png in Resources */,
+				A5CF061817AB90D7009E2569 /* you-are-here2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

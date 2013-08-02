@@ -92,7 +92,6 @@
     self.planes = fileExpo;
     self.userLocation = [[ASPoint alloc] initWithX:-100 andY:-100];
     [self updateExpoItems];
-    [self.locationManager startUpdatingLocation];
     
     // Initiate async update of the expo definition from server
     NSDateComponents *comps = [[NSDateComponents alloc] init];
@@ -133,7 +132,9 @@
     self.lastViewBounds = viewRect;
     float k = expoSize.width / viewRect.size.width;
     self.scrollView.contentSize = CGSizeMake(viewRect.size.width, expoSize.height / k);
-    self.scrollView.backgroundColor = [UIColor lightGrayColor];
+    UIImage *background = [UIImage imageNamed:@"Blueprint.jpg"];
+    self.scrollView.backgroundColor = [UIColor colorWithPatternImage:background];
+    //self.scrollView.backgroundColor = [UIColor lightGrayColor];
     
     // Put subViews into scrolling area
     for (ASPlanesSection *section in self.planes.sections) {
@@ -154,9 +155,9 @@
 {
     NSLog(@"User location on screen: %f - %f", self.userLocation.x, self.userLocation.y);
     if (!self.userLocationView) {
-        UIImage *locationIcon = [UIImage imageNamed:@"location-icon.png"];
+        UIImage *locationIcon = [UIImage imageNamed:@"you-are-here1.png"];
         UIImageView *locationView = [[UIImageView alloc] initWithImage:locationIcon];
-        locationView.frame = CGRectMake(-100, -100, 14, 20);
+        locationView.frame = CGRectMake(-100, -100, 20, 20);
         [self.scrollView addSubview:locationView];
         self.userLocationView = locationView;
     }
@@ -165,7 +166,7 @@
     float k = expoSize.width / viewRect.size.width;
 
     CGRect newLocation = self.userLocationView.frame;
-    newLocation.origin.x = self.userLocation.x / k - 7;
+    newLocation.origin.x = self.userLocation.x / k - 10;
     newLocation.origin.y = self.userLocation.y / k - 20;
     self.userLocationView.frame = newLocation;
     [self.scrollView bringSubviewToFront:self.userLocationView];
@@ -174,7 +175,13 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self.locationManager startUpdatingLocation];
     [self doAsyncUpdate];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [self.locationManager stopUpdatingLocation];
 }
 
 - (void)didReceiveMemoryWarning

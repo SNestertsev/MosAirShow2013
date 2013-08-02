@@ -42,6 +42,9 @@
         if (self.plane.name.length > 0) {
             self.nameLabel = [UILabel new];
             self.nameLabel.text = self.plane.name;
+            if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+                self.nameLabel.font = [self.nameLabel.font fontWithSize:[UIFont labelFontSize] * 2];
+            }
             [self.nameLabel sizeToFit];
             CGRect labelRect = self.nameLabel.frame;
             switch (self.plane.labelCorner) {

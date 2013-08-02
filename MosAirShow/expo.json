@@ -1,5 +1,5 @@
 {
-    "expoVersion" : "37",
+    "expoVersion" : "40",
     "expoDate" : "2013-08-30",
     "boundsWidth" : "110",
     "boundsHeight" : "1000",
@@ -12,7 +12,7 @@
      [
       {
       "name" : "С-295 Casa",
-      "labelCorner" : "3",
+      "labelCorner" : "1",
       "rectTop" : "0",
       "rectHeight" : "28",
       "rectLeft" : "74",
@@ -24,7 +24,7 @@
       },
       {
       "name" : "A-380",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "28",
       "rectHeight" : "80",
       "rectLeft" : "35",
@@ -46,7 +46,7 @@
       },
       {
       "name" : "Ил-76МФ",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "140",
       "rectHeight" : "45",
       "rectLeft" : "74",
@@ -57,7 +57,7 @@
       },
       {
       "name" : "Ту-204СМ",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "185",
       "rectHeight" : "40",
       "rectLeft" : "73",
@@ -68,7 +68,7 @@
       },
       {
       "name" : "Ту-214ОН",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "225",
       "rectHeight" : "40",
       "rectLeft" : "70",
@@ -79,7 +79,7 @@
       },
       {
       "name" : "L-39",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "265",
       "rectHeight" : "18",
       "rectLeft" : "74",
@@ -91,7 +91,7 @@
       },
       {
       "name" : "Ил-114ЛЛ",
-      "labelCorner" : "3",
+      "labelCorner" : "1",
       "rectTop" : "283",
       "rectHeight" : "30",
       "rectLeft" : "74",
@@ -103,7 +103,7 @@
       },
       {
       "name" : "Ту-154М",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "315",
       "rectHeight" : "40",
       "rectLeft" : "60",
@@ -114,7 +114,7 @@
       },
       {
       "name" : "Су-27",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "355",
       "rectHeight" : "15",
       "rectLeft" : "74",
@@ -126,7 +126,7 @@
       },
       {
       "name" : "МиГ-29УБ",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "370",
       "rectHeight" : "15",
       "rectLeft" : "74",
@@ -138,7 +138,7 @@
       },
       {
       "name" : "Ан-26",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "385",
       "rectHeight" : "30",
       "rectLeft" : "74",
@@ -150,7 +150,7 @@
       },
       {
       "name" : "Ил-103",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "415",
       "rectHeight" : "15",
       "rectLeft" : "74",
@@ -163,7 +163,7 @@
       },
       {
       "name" : "Bombardier Q400",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "430",
       "rectHeight" : "29",
       "rectLeft" : "60",
@@ -175,7 +175,7 @@
       },
       {
       "name" : "Ан-158",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "460",
       "rectHeight" : "29",
       "rectLeft" : "74",
@@ -198,7 +198,7 @@
       },
       {
       "name" : "Ми-8АМТШ",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "584",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -210,7 +210,7 @@
       },
       {
       "name" : "Ми-171 (VIP)",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "604",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -222,7 +222,7 @@
       },
       {
       "name" : "Ми-171А2",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "624",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -234,7 +234,7 @@
       },
       {
       "name" : "Ми-28НЭ",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "644",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -246,7 +246,7 @@
       },
       {
       "name" : "Ми-35М",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "664",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -258,7 +258,7 @@
       },
       {
       "name" : "Ка-226Т",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "684",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -270,7 +270,7 @@
       },
       {
       "name" : "Ка-52",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "704",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -282,7 +282,7 @@
       },
       {
       "name" : "Ка-62",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "724",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -294,7 +294,7 @@
       },
       {
       "name" : "Ми-38-2",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "744",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -306,7 +306,7 @@
       },
       {
       "name" : "Ка-32",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "764",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -318,7 +318,7 @@
       },
       {
       "name" : "Ми-26",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "784",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -330,7 +330,7 @@
       },
       {
       "name" : "Ми-17В-5",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "804",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -342,7 +342,7 @@
       },
       {
       "name" : "Ансат-макет",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "824",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -354,7 +354,7 @@
       },
       {
       "name" : "Ансат-У",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "844",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -366,7 +366,7 @@
       },
       {
       "name" : "Agusta Grand",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "864",
       "rectHeight" : "16",
       "rectLeft" : "74",
@@ -378,7 +378,7 @@
       },
       {
       "name" : "AW139",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "880",
       "rectHeight" : "17",
       "rectLeft" : "74",
@@ -390,7 +390,7 @@
       },
       {
       "name" : "МСБ-2",
-      "labelCorner" : "3",
+      "labelCorner" : "0",
       "rectTop" : "900",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -402,19 +402,19 @@
       },
       {
       "name" : "МиГ-15",
-      "labelCorner" : "3",
-      "rectTop" : "920",
-      "rectHeight" : "15",
-      "rectLeft" : "79",
+      "labelCorner" : "1",
+      "rectTop" : "923",
+      "rectHeight" : "12",
+      "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "16",
+      "rightMargin" : "20",
       "imageFile" : "Images/Mig-15 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Mig-15.htm"
       },
       {
       "name" : "Як-40",
-      "labelCorner" : "3",
+      "labelCorner" : "1",
       "rectTop" : "940",
       "rectHeight" : "20",
       "rectLeft" : "74",
@@ -449,7 +449,7 @@
      [
       {
       "name" : "SSJ-100",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "108",
       "rectHeight" : "30",
       "rectLeft" : "0",
@@ -461,7 +461,7 @@
       },
       {
       "name" : "Су-35",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "140",
       "rectHeight" : "22",
       "rectLeft" : "0",
@@ -473,7 +473,7 @@
       },
       {
       "name" : "Су-30МК2",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "162",
       "rectHeight" : "22",
       "rectLeft" : "0",
@@ -485,7 +485,7 @@
       },
       {
       "name" : "МиГ-29СМТ",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "184",
       "rectHeight" : "20",
       "rectLeft" : "0",
@@ -497,7 +497,7 @@
       },
       {
       "name" : "МиГ-29КУБ",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "204",
       "rectHeight" : "20",
       "rectLeft" : "0",
@@ -509,7 +509,7 @@
       },
       {
       "name" : "МиГ-29М2",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "224",
       "rectHeight" : "20",
       "rectLeft" : "0",
@@ -521,7 +521,7 @@
       },
       {
       "name" : "МиГ-31БМ",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "244",
       "rectHeight" : "20",
       "rectLeft" : "0",
@@ -533,7 +533,7 @@
       },
       {
       "name" : "МиГ-29СМТ",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "264",
       "rectHeight" : "20",
       "rectLeft" : "0",
@@ -545,7 +545,7 @@
       },
       {
       "name" : "Су-35С",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "284",
       "rectHeight" : "20",
       "rectLeft" : "0",
@@ -557,7 +557,7 @@
       },
       {
       "name" : "Су-27СМ",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "304",
       "rectHeight" : "20",
       "rectLeft" : "0",
@@ -569,7 +569,7 @@
       },
       {
       "name" : "Су-30М2",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "324",
       "rectHeight" : "20",
       "rectLeft" : "0",
@@ -581,7 +581,7 @@
       },
       {
       "name" : "Су-30СМ",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "344",
       "rectHeight" : "20",
       "rectLeft" : "0",
@@ -593,7 +593,7 @@
       },
       {
       "name" : "Су-34",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "364",
       "rectHeight" : "20",
       "rectLeft" : "0",
@@ -605,7 +605,7 @@
       },
       {
       "name" : "Су-25СМ",
-      "labelCorner" : "2",
+      "labelCorner" : "0",
       "rectTop" : "384",
       "rectHeight" : "15",
       "rectLeft" : "0",
@@ -617,7 +617,7 @@
       },
       {
       "name" : "Як-130",
-      "labelCorner" : "2",
+      "labelCorner" : "0",
       "rectTop" : "399",
       "rectHeight" : "11",
       "rectLeft" : "0",
@@ -629,7 +629,7 @@
       },
       {
       "name" : "Ми-26",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "410",
       "rectHeight" : "40",
       "rectLeft" : "0",
@@ -640,7 +640,7 @@
       },
       {
       "name" : "Ми-8АМТШ",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "450",
       "rectHeight" : "25",
       "rectLeft" : "0",
@@ -651,7 +651,7 @@
       },
       {
       "name" : "Ми-28Н",
-      "labelCorner" : "2",
+      "labelCorner" : "0",
       "rectTop" : "475",
       "rectHeight" : "15",
       "rectLeft" : "0",
@@ -663,7 +663,7 @@
       },
       {
       "name" : "Ка-52",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "490",
       "rectHeight" : "25",
       "rectLeft" : "0",
@@ -675,7 +675,7 @@
       },
       {
       "name" : "Ка-226",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "515",
       "rectHeight" : "25",
       "rectLeft" : "0",
@@ -687,7 +687,7 @@
       },
       {
       "name" : "Ансат-У",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "542",
       "rectHeight" : "20",
       "rectLeft" : "0",
@@ -699,7 +699,7 @@
       },
       {
       "name" : "Рысачок",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "565",
       "rectHeight" : "20",
       "rectLeft" : "0",
@@ -711,7 +711,7 @@
       },
       {
       "name" : "А-50",
-      "labelCorner" : "2",
+      "labelCorner" : "0",
       "rectTop" : "585",
       "rectHeight" : "40",
       "rectLeft" : "0",
@@ -722,7 +722,7 @@
       },
       {
       "name" : "Ту-160",
-      "labelCorner" : "2",
+      "labelCorner" : "0",
       "rectTop" : "625",
       "rectHeight" : "40",
       "rectLeft" : "0",
@@ -733,7 +733,7 @@
       },
       {
       "name" : "Ту-95МС",
-      "labelCorner" : "2",
+      "labelCorner" : "0",
       "rectTop" : "665",
       "rectHeight" : "40",
       "rectLeft" : "0",
@@ -744,7 +744,7 @@
       },
       {
       "name" : "Ту-144",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "710",
       "rectHeight" : "32",
       "rectLeft" : "0",
@@ -755,7 +755,7 @@
       },
       {
       "name" : "Ил-14Т",
-      "labelCorner" : "2",
+      "labelCorner" : "0",
       "rectTop" : "745",
       "rectHeight" : "32",
       "rectLeft" : "0",
@@ -767,7 +767,7 @@
       },
       {
       "name" : "L-29",
-      "labelCorner" : "2",
+      "labelCorner" : "0",
       "rectTop" : "777",
       "rectHeight" : "10",
       "rectLeft" : "0",
@@ -780,7 +780,7 @@
       },
       {
       "name" : "L-29",
-      "labelCorner" : "2",
+      "labelCorner" : "0",
       "rectTop" : "787",
       "rectHeight" : "10",
       "rectLeft" : "0",
@@ -793,7 +793,7 @@
       },
       {
       "name" : "Як-40К",
-      "labelCorner" : "2",
+      "labelCorner" : "0",
       "rectTop" : "800",
       "rectHeight" : "20",
       "rectLeft" : "0",
@@ -805,7 +805,7 @@
       },
       {
       "name" : "Ту-134",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "860",
       "rectHeight" : "30",
       "rectLeft" : "0",
@@ -816,7 +816,7 @@
       },
       {
       "name" : "ВМ-Т",
-      "labelCorner" : "2",
+      "labelCorner" : "1",
       "rectTop" : "890",
       "rectHeight" : "50",
       "rectLeft" : "0",
