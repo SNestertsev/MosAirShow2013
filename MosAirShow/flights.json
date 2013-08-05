@@ -1,16 +1,14 @@
 {
     "version" : "14",
     "days" : [
-    {
+              {
               "date" : "2013-08-30",
               "flights" : [
                            {
                            "startTime" : "11:00",
                            "endTime" : "11:05",
                            "name" : "Одиночный пилотаж\nМиГ-29",
-                           "description" : "Командир ВС: Копосов",
-                           "plane" : "МиГ-29К",
-                           "planeFile" : "Descriptions/Mig-29K.htm"
+                           "description" : "Командир ВС: Копосов"
                            },
                            {
                            "startTime" : "11:06",
@@ -54,9 +52,7 @@
                            "startTime" : "11:34",
                            "endTime" : "11:37",
                            "name" : "Пилотаж\nКа-226Т",
-                           "description" : "Командир ВС: Лебедев",
-                           "plane" : "Ка-226",
-                           "planeFile" : "Descriptions/Ka-226.htm"
+                           "description" : "Командир ВС: Лебедев"
                            },
                            {
                            "startTime" : "11:37",
@@ -70,17 +66,13 @@
                            "startTime" : "11:40",
                            "endTime" : "11:43",
                            "name" : "Пилотаж\nМи-28 НЭ",
-                           "description" : "Командир ВС: Ананьев",
-                           "plane" : "Ми-28Н",
-                           "planeFile" : "Descriptions/Mi-28N.htm"
+                           "description" : "Командир ВС: Ананьев"
                            },
                            {
                            "startTime" : "11:43",
                            "endTime" : "11:47",
                            "name" : "Пилотаж\nМи-26Т2",
-                           "description" : "Командир ВС: Климов",
-                           "plane" : "Ми-26",
-                           "planeFile" : "Descriptions/Mi-26.htm"
+                           "description" : "Командир ВС: Климов"
                            },
                            {
                            "startTime" : "11:48",
@@ -170,9 +162,7 @@
                            "startTime" : "14:00",
                            "endTime" : "14:20",
                            "name" : "Стрижи\n6 х МиГ-29",
-                           "description" : "Групповой пилотаж\nПилоты: Морозов, Осяйкин, Соколов, Селютин, Селиванов, Кузнецов",
-                           "plane" : "МиГ-29К",
-                           "planeFile" : "Descriptions/Mig-29K.htm"
+                           "description" : "Групповой пилотаж\nПилоты: Морозов, Осяйкин, Соколов, Селютин, Селиванов, Кузнецов"
                            },
                            {
                            "startTime" : "14:20",
@@ -224,9 +214,7 @@
                            "startTime" : "15:34",
                            "endTime" : "15:39",
                            "name" : "Пилотаж\nТ-50-2",
-                           "description" : "Командир ВС: Богдан",
-                           "plane" : "Т-50",
-                           "planeFile" : "Descriptions/T-50.htm"
+                           "description" : "Командир ВС: Богдан"
                            },
                            {
                            "startTime" : "15:40",
@@ -262,18 +250,16 @@
                            "plane" : "Су-27",
                            "planeFile" : "Descriptions/Su-27.htm"
                            }
-            ]
-    },
-    {
+                           ]
+              },
+              {
               "date" : "2013-08-31",
               "flights" : [
                            {
                            "startTime" : "11:00",
                            "endTime" : "11:05",
                            "name" : "Одиночный пилотаж\nМиГ-29",
-                           "description" : "Командир ВС: Копосов",
-                           "plane" : "МиГ-29К",
-                           "planeFile" : "Descriptions/Mig-29K.htm"
+                           "description" : "Командир ВС: Копосов"
                            },
                            {
                            "startTime" : "11:06",
@@ -317,9 +303,7 @@
                            "startTime" : "11:34",
                            "endTime" : "11:37",
                            "name" : "Пилотаж\nКа-226Т",
-                           "description" : "Командир ВС: Лебедев",
-                           "plane" : "Ка-226",
-                           "planeFile" : "Descriptions/Ka-226.htm"
+                           "description" : "Командир ВС: Лебедев"
                            },
                            {
                            "startTime" : "11:37",
@@ -333,17 +317,13 @@
                            "startTime" : "11:40",
                            "endTime" : "11:43",
                            "name" : "Пилотаж\nМи-28 НЭ",
-                           "description" : "Командир ВС: Ананьев",
-                           "plane" : "Ми-28Н",
-                           "planeFile" : "Descriptions/Mi-28N.htm"
+                           "description" : "Командир ВС: Ананьев"
                            },
                            {
                            "startTime" : "11:43",
                            "endTime" : "11:47",
                            "name" : "Пилотаж\nМи-26Т2",
-                           "description" : "Командир ВС: Климов",
-                           "plane" : "Ми-26",
-                           "planeFile" : "Descriptions/Mi-26.htm"
+                           "description" : "Командир ВС: Климов"
                            },
                            {
                            "startTime" : "11:48",
@@ -433,9 +413,7 @@
                            "startTime" : "14:00",
                            "endTime" : "14:20",
                            "name" : "Стрижи\n6 х МиГ-29",
-                           "description" : "Групповой пилотаж\nПилоты: Морозов, Осяйкин, Соколов, Селютин, Селиванов, Кузнецов",
-                           "plane" : "МиГ-29К",
-                           "planeFile" : "Descriptions/Mig-29K.htm"
+                           "description" : "Групповой пилотаж\nПилоты: Морозов, Осяйкин, Соколов, Селютин, Селиванов, Кузнецов"
                            },
                            {
                            "startTime" : "14:20",
@@ -487,9 +465,7 @@
                            "startTime" : "15:34",
                            "endTime" : "15:39",
                            "name" : "Пилотаж\nТ-50-2",
-                           "description" : "Командир ВС: Богдан",
-                           "plane" : "Т-50",
-                           "planeFile" : "Descriptions/T-50.htm"
+                           "description" : "Командир ВС: Богдан"
                            },
                            {
                            "startTime" : "15:40",
@@ -525,18 +501,16 @@
                            "plane" : "Су-27",
                            "planeFile" : "Descriptions/Su-27.htm"
                            }
-            ]
-    },
-    {
+                           ]
+              },
+              {
               "date" : "2013-09-01",
               "flights" : [
                            {
                            "startTime" : "11:00",
                            "endTime" : "11:05",
                            "name" : "Одиночный пилотаж\nМиГ-29",
-                           "description" : "Командир ВС: Копосов",
-                           "plane" : "МиГ-29К",
-                           "planeFile" : "Descriptions/Mig-29K.htm"
+                           "description" : "Командир ВС: Копосов"
                            },
                            {
                            "startTime" : "11:06",
@@ -580,9 +554,7 @@
                            "startTime" : "11:34",
                            "endTime" : "11:37",
                            "name" : "Пилотаж\nКа-226Т",
-                           "description" : "Командир ВС: Лебедев",
-                           "plane" : "Ка-226",
-                           "planeFile" : "Descriptions/Ka-226.htm"
+                           "description" : "Командир ВС: Лебедев"
                            },
                            {
                            "startTime" : "11:37",
@@ -596,17 +568,13 @@
                            "startTime" : "11:40",
                            "endTime" : "11:43",
                            "name" : "Пилотаж\nМи-28 НЭ",
-                           "description" : "Командир ВС: Ананьев",
-                           "plane" : "Ми-28Н",
-                           "planeFile" : "Descriptions/Mi-28N.htm"
+                           "description" : "Командир ВС: Ананьев"
                            },
                            {
                            "startTime" : "11:43",
                            "endTime" : "11:47",
                            "name" : "Пилотаж\nМи-26Т2",
-                           "description" : "Командир ВС: Климов",
-                           "plane" : "Ми-26",
-                           "planeFile" : "Descriptions/Mi-26.htm"
+                           "description" : "Командир ВС: Климов"
                            },
                            {
                            "startTime" : "11:48",
@@ -696,9 +664,7 @@
                            "startTime" : "14:00",
                            "endTime" : "14:20",
                            "name" : "Стрижи\n6 х МиГ-29",
-                           "description" : "Групповой пилотаж\nПилоты: Морозов, Осяйкин, Соколов, Селютин, Селиванов, Кузнецов",
-                           "plane" : "МиГ-29К",
-                           "planeFile" : "Descriptions/Mig-29K.htm"
+                           "description" : "Групповой пилотаж\nПилоты: Морозов, Осяйкин, Соколов, Селютин, Селиванов, Кузнецов"
                            },
                            {
                            "startTime" : "14:20",
@@ -750,9 +716,7 @@
                            "startTime" : "15:34",
                            "endTime" : "15:39",
                            "name" : "Пилотаж\nТ-50-2",
-                           "description" : "Командир ВС: Богдан",
-                           "plane" : "Т-50",
-                           "planeFile" : "Descriptions/T-50.htm"
+                           "description" : "Командир ВС: Богдан"
                            },
                            {
                            "startTime" : "15:40",
@@ -788,7 +752,7 @@
                            "plane" : "Су-27",
                            "planeFile" : "Descriptions/Su-27.htm"
                            }
-            ]
-    }
-    ]
+                           ]
+              }
+              ]
 }

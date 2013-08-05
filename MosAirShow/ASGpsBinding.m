@@ -18,7 +18,7 @@
 
 @interface ASGpsBinding()
 
-@property (nonatomic, readonly) NSArray* mapPoints;
+//@property (nonatomic, readonly) NSArray* mapPoints;
 @property (nonatomic, readonly) NSArray* modelPoints;
 
 @end
@@ -49,18 +49,18 @@
     return self;
 }
 
--(NSArray*)mapPoints
+-(NSArray*)getMapPointsWithShift:(MKMapPoint)shift
 {
     NSMutableArray* result = [[NSMutableArray alloc] initWithCapacity:self.gpsRegion.count + 1];
     for (ASPoint *point in self.gpsRegion) {
         MKMapPoint mapPoint = MKMapPointForCoordinate(CLLocationCoordinate2DMake(point.y, point.x));
-        [result addObject:[NSValue valueWithCGPoint:CGPointMake(mapPoint.x, mapPoint.y)]];
+        [result addObject:[NSValue valueWithCGPoint:CGPointMake(mapPoint.x - shift.x, mapPoint.y - shift.y)]];
     }
     // Add firsmost point at the end of array
     if (self.gpsRegion.count > 2) {
         ASPoint *firstPoint = [self.gpsRegion objectAtIndex:0];
         MKMapPoint mapPoint = MKMapPointForCoordinate(CLLocationCoordinate2DMake(firstPoint.y, firstPoint.x));
-        [result addObject:[NSValue valueWithCGPoint:CGPointMake(mapPoint.x, mapPoint.y)]];
+        [result addObject:[NSValue valueWithCGPoint:CGPointMake(mapPoint.x - shift.x, mapPoint.y - shift.y)]];
     }
     return result;
 }
@@ -98,14 +98,16 @@
 -(ASPoint *)transformGpsToModel:(CLLocationCoordinate2D)coordinate
 {
     MKMapPoint mapCoordinate = MKMapPointForCoordinate(coordinate);
-    CGPoint point = CGPointMake(mapCoordinate.x, mapCoordinate.y);
+    MKMapPoint mapShift = MKMapPointMake(mapCoordinate.x - 10000, mapCoordinate.y - 10000);
+    CGPoint point = CGPointMake(mapCoordinate.x - mapShift.x, mapCoordinate.y - mapShift.y);
     CGTriangle mapTriangle;
     CGTriangle modelTriangle;
-    if (![self findTriangleWithPoint:point mapPoints:&mapTriangle modelPoints:&modelTriangle])
+    if (![self findTriangleWithPoint:point shift:mapShift mapPoints:&mapTriangle modelPoints:&modelTriangle])
         return nil;
     CGFloat mapTrianglePerimeter = CGTrianglePerimeter(mapTriangle);
     if (mapTrianglePerimeter == 0.0f)
         return nil;
+    //NSLog(@"Model triangle: %f:%f - %f:%f - %f:%f", modelTriangle.point0.x, modelTriangle.point0.y, modelTriangle.point1.x, modelTriangle.point1.y, modelTriangle.point2.x, modelTriangle.point2.y);
     
     // Проверяем попадание точки в один из углов mapTriangle
     if (CGPointsAreEqual(point, mapTriangle.point0)) {
@@ -164,11 +166,11 @@
     return [[ASPoint alloc] initWithX:target.x andY:target.y];
 }
 
--(BOOL)findTriangleWithPoint:(CGPoint)point mapPoints:(CGTriangle*)mapTriangle modelPoints:(CGTriangle*)modelTriangle
+-(BOOL)findTriangleWithPoint:(CGPoint)point shift:(MKMapPoint)shift mapPoints:(CGTriangle*)mapTriangle modelPoints:(CGTriangle*)modelTriangle
 {
     if (self.gpsRegion.count < 3)
         return NO;
-    NSArray *mapPoints = self.mapPoints;    // Array of NSValue with CGPoint
+    NSArray *mapPoints = [self getMapPointsWithShift:shift];    // Array of NSValue with CGPoint
     int firstPointIndex = 0;
     do {
         UIBezierPath *region = [UIBezierPath bezierPath];

@@ -1,5 +1,5 @@
 {
-    "expoVersion" : "40",
+    "expoVersion" : "45",
     "expoDate" : "2013-08-30",
     "boundsWidth" : "110",
     "boundsHeight" : "1000",
@@ -855,19 +855,19 @@
      "gpsRegion" :
      [
       {
-      "pointX" : "38.1312",
+      "pointX" : "38.1317",
       "pointY" : "55.5658"
       },
       {
-      "pointX" : "38.1324",
-      "pointY" : "55.56736"
+      "pointX" : "38.1325",
+      "pointY" : "55.5673"
       },
       {
-      "pointX" : "38.1313",
-      "pointY" : "55.56815"
+      "pointX" : "38.1308",
+      "pointY" : "55.5684"
       },
       {
-      "pointX" : "38.13",
+      "pointX" : "38.1295",
       "pointY" : "55.5658"
       }
       ]
@@ -895,20 +895,20 @@
      "gpsRegion" :
      [
       {
-      "pointX" : "38.1324",
-      "pointY" : "55.56736"
+      "pointX" : "38.1325",
+      "pointY" : "55.5673"
       },
       {
-      "pointX" : "38.1326",
-      "pointY" : "55.5675"
+      "pointX" : "38.1329",
+      "pointY" : "55.56725"
       },
       {
-      "pointX" : "38.1328",
-      "pointY" : "55.56815"
+      "pointX" : "38.1329",
+      "pointY" : "55.5684"
       },
       {
-      "pointX" : "38.1313",
-      "pointY" : "55.56815"
+      "pointX" : "38.1308",
+      "pointY" : "55.5684"
       }
       ]
      },
@@ -921,11 +921,11 @@
       },
       {
       "pointX" : "0",
-      "pointY" : "1000"
+      "pointY" : "550"
       },
       {
       "pointX" : "110",
-      "pointY" : "1000"
+      "pointY" : "550"
       },
       {
       "pointX" : "110",
@@ -935,20 +935,60 @@
      "gpsRegion" :
      [
       {
-      "pointX" : "38.1326",
-      "pointY" : "55.5675"
+      "pointX" : "38.1329",
+      "pointY" : "55.56725"
+      },
+      {
+      "pointX" : "38.1394",
+      "pointY" : "55.56732"
+      },
+      {
+      "pointX" : "38.1394",
+      "pointY" : "55.5685"
+      },
+      {
+      "pointX" : "38.1329",
+      "pointY" : "55.5684"
+      }
+      ]
+     },
+     {
+     "modelRegion" :
+     [
+      {
+      "pointX" : "0",
+      "pointY" : "550"
+      },
+      {
+      "pointX" : "0",
+      "pointY" : "1000"
+      },
+      {
+      "pointX" : "110",
+      "pointY" : "1000"
+      },
+      {
+      "pointX" : "110",
+      "pointY" : "550"
+      }
+      ],
+     "gpsRegion" :
+     [
+      {
+      "pointX" : "38.1394",
+      "pointY" : "55.56732"
       },
       {
       "pointX" : "38.153",
-      "pointY" : "55.5676"
+      "pointY" : "55.5674"
       },
       {
       "pointX" : "38.153",
-      "pointY" : "55.56832"
+      "pointY" : "55.5685"
       },
       {
-      "pointX" : "38.1328",
-      "pointY" : "55.56815"
+      "pointX" : "38.1394",
+      "pointY" : "55.5685"
       }
       ]
      }

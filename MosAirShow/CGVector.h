@@ -83,6 +83,7 @@ static inline CGFloat CGVectorAngleBetweenNormalized(CGVector vector1, CGVector 
 static inline CGFloat CGVectorAngleBetween(CGVector vector1, CGVector vector2)
 {
     return acosf(CGVectorDotProduct(vector1, vector2) / (CGVectorMagnitude(vector1) * CGVectorMagnitude(vector2)));
+//    return atan2f(vector2.y, vector2.x) - atan2f(vector1.y, vector1.x);
 }
 
 static inline CGVector CGVectorRotate(CGVector vector, CGFloat radAngle)

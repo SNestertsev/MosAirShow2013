@@ -157,7 +157,11 @@
     if (!self.userLocationView) {
         UIImage *locationIcon = [UIImage imageNamed:@"you-are-here1.png"];
         UIImageView *locationView = [[UIImageView alloc] initWithImage:locationIcon];
-        locationView.frame = CGRectMake(-100, -100, 20, 20);
+        int imageSize = 20;
+        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+            imageSize = 40;
+        }
+        locationView.frame = CGRectMake(-100, -100, imageSize, imageSize);
         [self.scrollView addSubview:locationView];
         self.userLocationView = locationView;
     }
@@ -166,8 +170,8 @@
     float k = expoSize.width / viewRect.size.width;
 
     CGRect newLocation = self.userLocationView.frame;
-    newLocation.origin.x = self.userLocation.x / k - 10;
-    newLocation.origin.y = self.userLocation.y / k - 20;
+    newLocation.origin.x = self.userLocation.x / k - newLocation.size.width / 2;
+    newLocation.origin.y = self.userLocation.y / k - newLocation.size.height;
     self.userLocationView.frame = newLocation;
     [self.scrollView bringSubviewToFront:self.userLocationView];
 }
@@ -308,6 +312,14 @@
 {
     CLLocation* location = [locations objectAtIndex:locations.count - 1];
     self.userLocation = [self.planes transformGpsToModel:location.coordinate];
+    if (self.userLocation.x > 0) {
+        if (self.userLocation.x < self.planes.bounds.width / 3) {
+            self.userLocation.x = self.planes.bounds.width / 3;
+        }
+        else if (self.userLocation.x > self.planes.bounds.width * 2 / 3) {
+            self.userLocation.x = self.planes.bounds.width * 2 / 3;
+        }
+    }
     [self updateUserLocationView];
 }
 
