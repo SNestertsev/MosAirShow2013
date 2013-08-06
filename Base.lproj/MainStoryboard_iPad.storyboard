@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="1bn-rD-xOz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="1bn-rD-xOz">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -9,7 +9,7 @@
             <objects>
                 <tabBarController definesPresentationContext="YES" id="1bn-rD-xOz" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ZdB-Bs-vkb">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -24,11 +24,11 @@
             </objects>
             <point key="canvasLocation" x="1120" y="-1121"/>
         </scene>
-        <!--Navigation Controller - Статика-->
+        <!--Navigation Controller - Экспозиция-->
         <scene sceneID="Lce-bC-6S8">
             <objects>
                 <navigationController definesPresentationContext="YES" id="GAw-9f-mFd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Статика" image="static_icon" id="bf9-qr-N2I"/>
+                    <tabBarItem key="tabBarItem" title="Экспозиция" image="static_icon" id="bf9-qr-N2I"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DW0-iF-IeZ">
                         <autoresizingMask key="autoresizingMask"/>
@@ -41,7 +41,7 @@
             </objects>
             <point key="canvasLocation" x="2071" y="-1125"/>
         </scene>
-        <!--Expo View Controller - Статика-->
+        <!--Expo View Controller - Экспозиция-->
         <scene sceneID="OYS-1R-y8m">
             <objects>
                 <viewController id="ReY-vW-Xzv" customClass="ASExpoViewController" sceneMemberID="viewController">
@@ -59,7 +59,7 @@
                             <constraint firstItem="TrQ-4I-voF" firstAttribute="trailing" secondItem="f2C-Gp-Lpd" secondAttribute="trailing" type="default" id="szK-UQ-wD7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Статика" id="pOB-vo-ARI"/>
+                    <navigationItem key="navigationItem" title="Экспозиция" id="pOB-vo-ARI"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <connections>
                         <outlet property="scrollView" destination="TrQ-4I-voF" id="Q2W-E7-81c"/>
@@ -78,8 +78,9 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oca-rV-rKG">
+                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oca-rV-rKG">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

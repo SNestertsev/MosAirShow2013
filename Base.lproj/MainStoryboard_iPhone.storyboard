@@ -22,8 +22,8 @@
                             <constraint firstItem="jtB-ee-N9t" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="Vum-JD-laA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Статика" image="static_icon" id="7"/>
-                    <navigationItem key="navigationItem" title="Статика" id="v5J-aY-JJo"/>
+                    <tabBarItem key="tabBarItem" title="Экспозиция" image="static_icon" id="7"/>
+                    <navigationItem key="navigationItem" title="Экспозиция" id="v5J-aY-JJo"/>
                     <connections>
                         <outlet property="scrollView" destination="jtB-ee-N9t" id="aHu-5t-a2O"/>
                         <segue destination="TV9-oz-jGC" kind="push" identifier="ShowPlaneDetails" id="YgI-GG-svg"/>
@@ -90,8 +90,9 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsx-hK-rb5">
+                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsx-hK-rb5">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -111,11 +112,11 @@
             </objects>
             <point key="canvasLocation" x="1873" y="-557"/>
         </scene>
-        <!--Navigation Controller - Статика-->
+        <!--Navigation Controller - Экспозиция-->
         <scene sceneID="8BD-SN-rRw">
             <objects>
                 <navigationController definesPresentationContext="YES" id="xF1-MJ-XKv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Статика" image="static_icon" id="wnD-jX-KXD"/>
+                    <tabBarItem key="tabBarItem" title="Экспозиция" image="static_icon" id="wnD-jX-KXD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="T5l-dK-U5j">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -517,7 +518,6 @@
         <class className="ASPlanesViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ASPlanesViewController.h"/>
             <relationships>
-                <relationship kind="action" name="tapGesture:"/>
                 <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>

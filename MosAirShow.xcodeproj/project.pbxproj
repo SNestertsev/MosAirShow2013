@@ -153,6 +153,7 @@
 		A5CF061117AB90D6009E2569 /* Road.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Road.jpg; sourceTree = "<group>"; };
 		A5CF061217AB90D6009E2569 /* you-are-here1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "you-are-here1.png"; sourceTree = "<group>"; };
 		A5CF061317AB90D6009E2569 /* you-are-here2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "you-are-here2.png"; sourceTree = "<group>"; };
+		A5CF065C17B0D4C6009E2569 /* MosAirShow copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MosAirShow copy-Info.plist"; path = "/Users/sergey/Проекты/MosAirShow/MosAirShow copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +191,7 @@
 				A5BB3ED4178D858600051D15 /* MosAirShow */,
 				A5BB3ECD178D858600051D15 /* Frameworks */,
 				A5BB3ECC178D858600051D15 /* Products */,
+				A5CF065C17B0D4C6009E2569 /* MosAirShow copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
