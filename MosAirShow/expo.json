@@ -1,5 +1,5 @@
 {
-    "expoVersion" : "53",
+    "expoVersion" : "61",
     "expoDate" : "2013-08-30",
     "boundsWidth" : "110",
     "boundsHeight" : "1000",
@@ -73,7 +73,7 @@
       "rectHeight" : "40",
       "rectLeft" : "70",
       "rectWidth" : "40",
-      "imageFile" : "Images/Tu-214 flip.png",
+      "imageFile" : "Images/Tu-204-300A flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Tu-214.htm"
       },
@@ -91,11 +91,12 @@
       },
       {
       "name" : "Ил-114ЛЛ",
-      "labelCorner" : "1",
+      "labelCorner" : "0",
       "rectTop" : "283",
       "rectHeight" : "25",
-      "rectLeft" : "74",
-      "rectWidth" : "36",
+      "rectLeft" : "60",
+      "rectWidth" : "50",
+      "leftMargin" : "18",
       "rightMargin" : "10",
       "imageFile" : "Images/Il-114 flip.png",
       "flipImage" : "1",
@@ -128,10 +129,10 @@
       "name" : "МиГ-29УБ",
       "labelCorner" : "0",
       "rectTop" : "370",
-      "rectHeight" : "15",
+      "rectHeight" : "20",
       "rectLeft" : "74",
       "rectWidth" : "36",
-      "rightMargin" : "14",
+      "rightMargin" : "7",
       "imageFile" : "Images/Mig-29 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Mig-29UB.htm"
@@ -139,7 +140,7 @@
       {
       "name" : "Ан-26",
       "labelCorner" : "0",
-      "rectTop" : "385",
+      "rectTop" : "390",
       "rectHeight" : "30",
       "rectLeft" : "74",
       "rectWidth" : "36",
@@ -151,7 +152,7 @@
       {
       "name" : "Ил-103",
       "labelCorner" : "0",
-      "rectTop" : "415",
+      "rectTop" : "420",
       "rectHeight" : "15",
       "rectLeft" : "74",
       "rectWidth" : "36",
@@ -164,7 +165,7 @@
       {
       "name" : "Bombardier Q400",
       "labelCorner" : "1",
-      "rectTop" : "430",
+      "rectTop" : "435",
       "rectHeight" : "29",
       "rectLeft" : "60",
       "rectWidth" : "50",
@@ -176,7 +177,7 @@
       {
       "name" : "Ан-158",
       "labelCorner" : "0",
-      "rectTop" : "460",
+      "rectTop" : "465",
       "rectHeight" : "29",
       "rectLeft" : "74",
       "rectWidth" : "36",
@@ -277,7 +278,7 @@
       "rectLeft" : "74",
       "rectWidth" : "36",
       "leftMargin" : "10",
-      "rightMargin" : "8",
+      "rightMargin" : "6",
       "imageFile" : "Images/Ka-52 flip.png",
       "flipImage" : "1",
       "description" : "Descriptions/Ka-52.htm"
@@ -672,11 +673,12 @@
       {
       "name" : "Ка-52",
       "labelCorner" : "1",
-      "rectTop" : "490",
-      "rectHeight" : "25",
+      "rectTop" : "494",
+      "rectHeight" : "16",
       "rectLeft" : "0",
       "rectWidth" : "36",
-      "leftMargin" : "4",
+      "leftMargin" : "6",
+      "rightMargin" : "10",
       "imageFile" : "Images/Ka-52.png",
       "flipImage" : "0",
       "description" : "Descriptions/Ka-52.htm"
@@ -684,11 +686,12 @@
       {
       "name" : "Ка-226",
       "labelCorner" : "1",
-      "rectTop" : "515",
-      "rectHeight" : "25",
+      "rectTop" : "510",
+      "rectHeight" : "14",
       "rectLeft" : "0",
       "rectWidth" : "36",
-      "leftMargin" : "8",
+      "leftMargin" : "10",
+      "rightMargin" : "10",
       "imageFile" : "Images/Ka-226.png",
       "flipImage" : "0",
       "description" : "Descriptions/Ka-226.htm"
@@ -696,11 +699,12 @@
       {
       "name" : "Ансат-У",
       "labelCorner" : "1",
-      "rectTop" : "542",
-      "rectHeight" : "20",
+      "rectTop" : "530",
+      "rectHeight" : "14",
       "rectLeft" : "0",
       "rectWidth" : "36",
-      "leftMargin" : "7",
+      "leftMargin" : "6",
+      "rightMargin" : "10",
       "imageFile" : "Images/Ansant-U.png",
       "flipImage" : "0",
       "description" : "Descriptions/Ansat-U.htm"
@@ -708,11 +712,12 @@
       {
       "name" : "Рысачок",
       "labelCorner" : "1",
-      "rectTop" : "565",
+      "rectTop" : "550",
       "rectHeight" : "20",
       "rectLeft" : "0",
       "rectWidth" : "36",
-      "leftMargin" : "22",
+      "leftMargin" : "12",
+      "rightMargin" : "10",
       "imageFile" : "Images/Rysachok.png",
       "flipImage" : "0",
       "description" : "Descriptions/Rysachok.htm"

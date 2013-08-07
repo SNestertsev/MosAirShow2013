@@ -287,6 +287,7 @@
             dataFileConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
             [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         }
+        self.lastFileUpdate = [NSDate date];
         versionsFileConnection = nil;
     }
     else if (connection == dataFileConnection) {
@@ -299,6 +300,7 @@
             [responseData writeToFile:kDataFileName atomically:YES];
             self.planes = newModel;
             // Update the view
+            self.lastViewBounds = CGRectMake(0, 0, 0, 0);
             [self updateExpoItems];
         }
         

@@ -331,6 +331,7 @@
             dataFileConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
             [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         }
+        self.lastFileUpdate = [NSDate date];
         versionsFileConnection = nil;
     }
     else if (connection == dataFileConnection) {
