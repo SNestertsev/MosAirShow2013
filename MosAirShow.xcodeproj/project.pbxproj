@@ -716,10 +716,13 @@
 		A5CF069D17B17069009E2569 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Сергей Нестерцев (7ZUS2FTLCU)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MosAirShow/MosAirShow-Prefix.pch";
 				INFOPLIST_FILE = "MosAirShow copy2-Info.plist";
 				PRODUCT_NAME = LiiAndMaks;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1C52EB0C-8AF9-4FF4-840B-456D232056BE";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -727,10 +730,13 @@
 		A5CF069E17B17069009E2569 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sergey Nestertsev";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MosAirShow/MosAirShow-Prefix.pch";
 				INFOPLIST_FILE = "MosAirShow copy2-Info.plist";
 				PRODUCT_NAME = LiiAndMaks;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D01C7E77-8327-4C4B-8C2B-EC8A02CBE420";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
