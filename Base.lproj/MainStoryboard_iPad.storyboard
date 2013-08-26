@@ -50,18 +50,45 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TrQ-4I-voF"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="388" translatesAutoresizingMaskIntoConstraints="NO" id="CeN-aW-VIp">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="REJ-B8-ixh"/>
+                                    <constraint firstAttribute="width" constant="388" id="uRm-Zh-9rU"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Выберите самолет, у которого Вы хотите сфотографироваться">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" (его название сохранится в описании файла)">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="12" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TrQ-4I-voF" firstAttribute="bottom" secondItem="f2C-Gp-Lpd" secondAttribute="bottom" type="default" id="8Z2-VW-q1g"/>
-                            <constraint firstItem="TrQ-4I-voF" firstAttribute="top" secondItem="f2C-Gp-Lpd" secondAttribute="top" type="default" id="GOR-1e-O2r"/>
-                            <constraint firstItem="TrQ-4I-voF" firstAttribute="leading" secondItem="f2C-Gp-Lpd" secondAttribute="leading" type="default" id="l53-RP-RBJ"/>
-                            <constraint firstItem="TrQ-4I-voF" firstAttribute="trailing" secondItem="f2C-Gp-Lpd" secondAttribute="trailing" type="default" id="szK-UQ-wD7"/>
+                            <constraint firstItem="TrQ-4I-voF" firstAttribute="trailing" secondItem="f2C-Gp-Lpd" secondAttribute="trailing" type="default" id="48J-dE-3U9"/>
+                            <constraint firstItem="TrQ-4I-voF" firstAttribute="top" secondItem="f2C-Gp-Lpd" secondAttribute="top" type="default" id="Pxl-Ka-ugd"/>
+                            <constraint firstItem="TrQ-4I-voF" firstAttribute="bottom" secondItem="f2C-Gp-Lpd" secondAttribute="bottom" type="default" id="Qah-ga-huW"/>
+                            <constraint firstItem="TrQ-4I-voF" firstAttribute="leading" secondItem="f2C-Gp-Lpd" secondAttribute="leading" type="default" id="TIw-lS-R2G"/>
+                            <constraint firstItem="CeN-aW-VIp" firstAttribute="bottom" secondItem="f2C-Gp-Lpd" secondAttribute="bottom" type="default" id="hG8-sc-sZu"/>
+                            <constraint firstItem="CeN-aW-VIp" firstAttribute="trailing" secondItem="f2C-Gp-Lpd" secondAttribute="trailing" type="default" id="yX6-RF-07C"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Экспозиция" id="pOB-vo-ARI"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <connections>
+                        <outlet property="photoPromptLabel" destination="CeN-aW-VIp" id="CAg-hi-F3v"/>
                         <outlet property="scrollView" destination="TrQ-4I-voF" id="Q2W-E7-81c"/>
                         <segue destination="wCF-PN-Xzt" kind="push" identifier="ShowPlaneDetails" id="E1h-Ea-Den"/>
                     </connections>
@@ -432,13 +459,10 @@
         <image name="static_icon" width="16" height="16"/>
     </resources>
     <classes>
-        <class className="ASExpoView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ASExpoView.h"/>
-        </class>
         <class className="ASExpoViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ASExpoViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="expoView" candidateClass="ASExpoView"/>
+                <relationship kind="outlet" name="photoPromptLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
             </relationships>
         </class>

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A53F1E2F17BCFB280093EBD2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53F1E2E17BCFB280093EBD2 /* AssetsLibrary.framework */; };
+		A53F1E3117BD01220093EBD2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53F1E3017BD01210093EBD2 /* MobileCoreServices.framework */; };
+		A53F1E3617BD06D90093EBD2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53F1E3517BD06D90093EBD2 /* ImageIO.framework */; };
+		A53F1E3917BD0A7F0093EBD2 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = A53F1E3817BD0A7F0093EBD2 /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
+		A53F1E3A17BD0A7F0093EBD2 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = A53F1E3817BD0A7F0093EBD2 /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		A546B22717A8F79F00CDFF87 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A546B22017A8F79F00CDFF87 /* Default-568h@2x.png */; };
 		A546B22817A8F79F00CDFF87 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = A546B22117A8F79F00CDFF87 /* Default-Landscape@2x~ipad.png */; };
 		A546B22917A8F79F00CDFF87 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = A546B22217A8F79F00CDFF87 /* Default-Landscape~ipad.png */; };
@@ -33,7 +38,6 @@
 		A5BB3EDB178D858600051D15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB3EDA178D858600051D15 /* main.m */; };
 		A5BB3EFC178D864500051D15 /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB3EF5178D864500051D15 /* ASAppDelegate.m */; };
 		A5BB3EFD178D864500051D15 /* ASExpoItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB3EF7178D864500051D15 /* ASExpoItemView.m */; };
-		A5BB3EFE178D864500051D15 /* ASExpoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB3EF9178D864500051D15 /* ASExpoView.m */; };
 		A5BB3EFF178D864500051D15 /* ASExpoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB3EFB178D864500051D15 /* ASExpoViewController.m */; };
 		A5BB3F02178D865500051D15 /* ASFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB3F01178D865500051D15 /* ASFlight.m */; };
 		A5BB3F05178D866400051D15 /* ASFlightDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB3F04178D866400051D15 /* ASFlightDetailsViewController.m */; };
@@ -69,7 +73,6 @@
 		A5CF065F17B17069009E2569 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB3EDA178D858600051D15 /* main.m */; };
 		A5CF066017B17069009E2569 /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB3EF5178D864500051D15 /* ASAppDelegate.m */; };
 		A5CF066117B17069009E2569 /* ASExpoItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB3EF7178D864500051D15 /* ASExpoItemView.m */; };
-		A5CF066217B17069009E2569 /* ASExpoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB3EF9178D864500051D15 /* ASExpoView.m */; };
 		A5CF066317B17069009E2569 /* ASExpoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB3EFB178D864500051D15 /* ASExpoViewController.m */; };
 		A5CF066417B17069009E2569 /* ASFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB3F01178D865500051D15 /* ASFlight.m */; };
 		A5CF066517B17069009E2569 /* ASFlightDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB3F04178D866400051D15 /* ASFlightDetailsViewController.m */; };
@@ -128,6 +131,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A53F1E2E17BCFB280093EBD2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		A53F1E3017BD01210093EBD2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A53F1E3517BD06D90093EBD2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A53F1E3717BD0A7F0093EBD2 /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
+		A53F1E3817BD0A7F0093EBD2 /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
 		A546B22017A8F79F00CDFF87 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A546B22117A8F79F00CDFF87 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		A546B22217A8F79F00CDFF87 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
@@ -162,8 +170,6 @@
 		A5BB3EF5178D864500051D15 /* ASAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAppDelegate.m; sourceTree = "<group>"; };
 		A5BB3EF6178D864500051D15 /* ASExpoItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASExpoItemView.h; sourceTree = "<group>"; };
 		A5BB3EF7178D864500051D15 /* ASExpoItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASExpoItemView.m; sourceTree = "<group>"; };
-		A5BB3EF8178D864500051D15 /* ASExpoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASExpoView.h; sourceTree = "<group>"; };
-		A5BB3EF9178D864500051D15 /* ASExpoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASExpoView.m; sourceTree = "<group>"; };
 		A5BB3EFA178D864500051D15 /* ASExpoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASExpoViewController.h; sourceTree = "<group>"; };
 		A5BB3EFB178D864500051D15 /* ASExpoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASExpoViewController.m; sourceTree = "<group>"; };
 		A5BB3F00178D865500051D15 /* ASFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFlight.h; sourceTree = "<group>"; };
@@ -235,6 +241,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53F1E3617BD06D90093EBD2 /* ImageIO.framework in Frameworks */,
+				A53F1E3117BD01220093EBD2 /* MobileCoreServices.framework in Frameworks */,
+				A53F1E2F17BCFB280093EBD2 /* AssetsLibrary.framework in Frameworks */,
 				A5CF067417B17069009E2569 /* MapKit.framework in Frameworks */,
 				A5CF067517B17069009E2569 /* CoreLocation.framework in Frameworks */,
 				A5CF067617B17069009E2569 /* SystemConfiguration.framework in Frameworks */,
@@ -282,10 +291,13 @@
 		A5BB3ECD178D858600051D15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A53F1E2E17BCFB280093EBD2 /* AssetsLibrary.framework */,
 				A5BB3ED2178D858600051D15 /* CoreGraphics.framework */,
 				A5BB3F4D178D8BDD00051D15 /* CoreLocation.framework */,
 				A5BB3ED0178D858600051D15 /* Foundation.framework */,
+				A53F1E3517BD06D90093EBD2 /* ImageIO.framework */,
 				A558063A17A0F85100A3CE83 /* MapKit.framework */,
+				A53F1E3017BD01210093EBD2 /* MobileCoreServices.framework */,
 				A5BB3F47178D8A5E00051D15 /* SystemConfiguration.framework */,
 				A5BB3ECE178D858600051D15 /* UIKit.framework */,
 			);
@@ -304,8 +316,6 @@
 				A5BB3EF5178D864500051D15 /* ASAppDelegate.m */,
 				A5BB3EFA178D864500051D15 /* ASExpoViewController.h */,
 				A5BB3EFB178D864500051D15 /* ASExpoViewController.m */,
-				A5BB3EF8178D864500051D15 /* ASExpoView.h */,
-				A5BB3EF9178D864500051D15 /* ASExpoView.m */,
 				A5BB3EF6178D864500051D15 /* ASExpoItemView.h */,
 				A5BB3EF7178D864500051D15 /* ASExpoItemView.m */,
 				A5BB3F14178D868700051D15 /* ASPlaneDetailsViewController.h */,
@@ -318,6 +328,8 @@
 				A5BB3F04178D866400051D15 /* ASFlightDetailsViewController.m */,
 				A5BB3F0C178D868700051D15 /* ASFlightsTableCell.h */,
 				A5BB3F0D178D868700051D15 /* ASFlightsTableCell.m */,
+				A53F1E3717BD0A7F0093EBD2 /* ALAssetsLibrary+CustomPhotoAlbum.h */,
+				A53F1E3817BD0A7F0093EBD2 /* ALAssetsLibrary+CustomPhotoAlbum.m */,
 				A5BB3F41178D89ED00051D15 /* NSDate+DateCategories.h */,
 				A5BB3F42178D89ED00051D15 /* NSDate+DateCategories.m */,
 				A5BB3F43178D89ED00051D15 /* Reachability.h */,
@@ -554,7 +566,6 @@
 				A5BB3EDB178D858600051D15 /* main.m in Sources */,
 				A5BB3EFC178D864500051D15 /* ASAppDelegate.m in Sources */,
 				A5BB3EFD178D864500051D15 /* ASExpoItemView.m in Sources */,
-				A5BB3EFE178D864500051D15 /* ASExpoView.m in Sources */,
 				A5BB3EFF178D864500051D15 /* ASExpoViewController.m in Sources */,
 				A5BB3F02178D865500051D15 /* ASFlight.m in Sources */,
 				A5BB3F05178D866400051D15 /* ASFlightDetailsViewController.m in Sources */,
@@ -571,6 +582,7 @@
 				A5BB3F26178D868700051D15 /* ASPoint.m in Sources */,
 				A5BB3F45178D89ED00051D15 /* NSDate+DateCategories.m in Sources */,
 				A5BB3F46178D89ED00051D15 /* Reachability.m in Sources */,
+				A53F1E3917BD0A7F0093EBD2 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,7 +593,6 @@
 				A5CF065F17B17069009E2569 /* main.m in Sources */,
 				A5CF066017B17069009E2569 /* ASAppDelegate.m in Sources */,
 				A5CF066117B17069009E2569 /* ASExpoItemView.m in Sources */,
-				A5CF066217B17069009E2569 /* ASExpoView.m in Sources */,
 				A5CF066317B17069009E2569 /* ASExpoViewController.m in Sources */,
 				A5CF066417B17069009E2569 /* ASFlight.m in Sources */,
 				A5CF066517B17069009E2569 /* ASFlightDetailsViewController.m in Sources */,
@@ -598,6 +609,7 @@
 				A5CF067017B17069009E2569 /* ASPoint.m in Sources */,
 				A5CF067117B17069009E2569 /* NSDate+DateCategories.m in Sources */,
 				A5CF067217B17069009E2569 /* Reachability.m in Sources */,
+				A53F1E3A17BD0A7F0093EBD2 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

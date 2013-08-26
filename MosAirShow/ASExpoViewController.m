@@ -7,7 +7,6 @@
 //
 
 #import "ASExpoViewController.h"
-#import "ASExpoView.h"
 #import "ASExpoItemView.h"
 #import "ASPlanesModel.h"
 #import "ASPlanesSection.h"
@@ -16,27 +15,31 @@
 #import "ASPlanesViewController.h"
 #import "ASPlaneDetailsViewController.h"
 #import "Reachability.h"
+#import "ALAssetsLibrary+CustomPhotoAlbum.h"
+#import <ImageIO/CGImageProperties.h>
 
 #define kDataFileName @"expo.json"
-//#define kWebServerName @"mosairshow2013.ucoz.ru"
 #define kWebServerName @"sites.google.com"
-//#define kDataFileOnWeb @"http://mosairshow2013.ucoz.ru/expo.json"
 #define kDataFileOnWeb @"https://sites.google.com/site/mosairshow2013/expo.json?attredirects=0&d=1"
-//#define kVersionsFileOnWeb @"http://mosairshow2013.ucoz.ru/versions.json"
 #define kVersionsFileOnWeb @"https://sites.google.com/site/mosairshow2013/versions.json?attredirects=0&d=1"
 
 @interface ASExpoViewController ()
 
 @property (nonatomic, strong) ASPlanesModel* planes;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet ASExpoView *expoView;
-@property (weak, nonatomic) ASExpoItemView *selectedItemView;
+@property (strong, nonatomic) ASExpoItemView *selectedItemView;
 @property (strong, nonatomic) Reachability *reach;
 @property (strong, nonatomic) NSDate *lastFileUpdate;
 @property (nonatomic, strong) CLLocationManager* locationManager;
 @property (nonatomic, strong) ASPoint *userLocation;
 @property (nonatomic, weak) UIImageView *userLocationView;
 @property (nonatomic) CGRect lastViewBounds;
+
+@property (strong, atomic) ALAssetsLibrary* photoLibrary;
+@property (strong, nonatomic) UIBarButtonItem *cameraButton;
+@property (strong, nonatomic) UIBarButtonItem *cancelButton;
+@property (weak, nonatomic) IBOutlet UILabel *photoPromptLabel;
+@property (nonatomic) BOOL makingPhoto;
 
 @end
 
@@ -92,6 +95,30 @@
     self.planes = fileExpo;
     self.userLocation = [[ASPoint alloc] initWithX:-100 andY:-100];
     [self updateExpoItems];
+    
+    self.photoPromptLabel.hidden = YES;
+    self.makingPhoto = NO;
+    BOOL canMakePhotos = NO;
+    BOOL hasCamera = [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera];
+    if (hasCamera) {
+        NSArray* arr = [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeCamera];
+        if ([arr indexOfObject:(NSString*)kUTTypeImage] != NSNotFound) {
+            canMakePhotos = YES;
+            self.photoLibrary = [[ALAssetsLibrary alloc] init];
+        }
+    }
+    if (canMakePhotos) {
+        self.cameraButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(takePhoto:)];
+        self.cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelPhoto:)];
+        NSMutableArray *toolbarButtons = [self.navigationItem.rightBarButtonItems mutableCopy];
+        if (!toolbarButtons) {
+            toolbarButtons = [[NSMutableArray alloc] init];
+        }
+        if (![toolbarButtons containsObject:self.cameraButton]) {
+            [toolbarButtons addObject:self.cameraButton];
+        }
+        [self.navigationItem setRightBarButtonItems:toolbarButtons animated:YES];
+    }
     
     // Initiate async update of the expo definition from server
     NSDateComponents *comps = [[NSDateComponents alloc] init];
@@ -186,6 +213,7 @@
 -(void)viewWillDisappear:(BOOL)animated
 {
     [self.locationManager stopUpdatingLocation];
+    [self cancelPhoto:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -210,10 +238,16 @@
 -(void)expoItemAction:(ASExpoItemView *)item
 {
     if (item.plane.descriptionFile.length == 0) {
-        return;
+        return; // Игнорируем "Входы"
     }
     self.selectedItemView = item;
-    [self performSegueWithIdentifier:@"ShowPlaneDetails" sender:self];
+    
+    if (self.makingPhoto) {
+        [self useCamera];
+    }
+    else {
+        [self performSegueWithIdentifier:@"ShowPlaneDetails" sender:self];
+    }
 }
 
 -(void)reachabilityChanges: (NSNotification*)notification
@@ -239,6 +273,48 @@
     versionsFileConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 }
+
+- (void)takePhoto:(id)sender
+{
+    if (self.makingPhoto) return;
+    self.makingPhoto = YES;
+    self.photoPromptLabel.hidden = NO;
+    NSMutableArray *toolbarButtons = [self.navigationItem.rightBarButtonItems mutableCopy];
+    [toolbarButtons removeObject:self.cameraButton];
+    if (![toolbarButtons containsObject:self.cancelButton]) {
+        [toolbarButtons addObject:self.cancelButton];
+    }
+    [self.navigationItem setRightBarButtonItems:toolbarButtons animated:YES];
+}
+
+-(void)cancelPhoto:(id)sender
+{
+    if (!self.makingPhoto) return;
+    self.makingPhoto = NO;
+    self.photoPromptLabel.hidden = YES;
+    NSMutableArray *toolbarButtons = [self.navigationItem.rightBarButtonItems mutableCopy];
+    [toolbarButtons removeObject:self.cancelButton];
+    if (![toolbarButtons containsObject:self.cameraButton]) {
+        [toolbarButtons addObject:self.cameraButton];
+    }
+    [self.navigationItem setRightBarButtonItems:toolbarButtons animated:YES];
+}
+
+-(void)useCamera
+{
+    @try {
+        UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+        imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+        imagePickerController.mediaTypes = [[NSArray alloc] initWithObjects: (NSString *) kUTTypeImage, nil];
+        imagePickerController.editing = NO;
+        imagePickerController.delegate = (id)self;
+        [self presentViewController:imagePickerController animated:YES completion:nil];
+    }
+    @catch (NSException *exception) {
+        NSLog(@"Error while using camera: %@", exception);
+    }
+}
+
 
 #pragma mark - NSURLConnection Delegate methods
 
@@ -334,5 +410,36 @@
     }
 }
 
+#pragma mark - UIImagePickerControllerDelegate Delegate methods
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage* originalImage = info[UIImagePickerControllerOriginalImage];    
+    NSDictionary* metadata = info[UIImagePickerControllerMediaMetadata];
+    NSMutableDictionary* mutableMetadata = [metadata mutableCopy];
+    if (self.selectedItemView.plane.name.length > 0) {
+        NSMutableDictionary* iptc = [mutableMetadata objectForKey:(NSString*)kCGImagePropertyIPTCDictionary];
+        if (iptc == nil) {
+            iptc = [NSMutableDictionary dictionary];
+            [mutableMetadata setObject:iptc forKey:(NSString*)kCGImagePropertyIPTCDictionary];
+        }
+        [iptc setObject:self.selectedItemView.plane.name forKey:(NSString*)kCGImagePropertyIPTCCaptionAbstract];
+    }
+    NSBundle* bundle = [NSBundle mainBundle];
+    NSDictionary* bundleInfo = [bundle infoDictionary];
+    NSString* bundleName = [bundleInfo objectForKey:@"CFBundleDisplayName"];
+    [self.photoLibrary saveImage:originalImage metadata:mutableMetadata toAlbum:bundleName withCompletionBlock:^(NSError *error) {
+        if (error != nil) {
+            NSLog(@"Error while saving photo to library: %@", error.description);
+        }
+    }];
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    [self cancelPhoto:nil];
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    [self cancelPhoto:nil];
+}
 
 @end
