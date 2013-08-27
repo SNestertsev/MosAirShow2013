@@ -1,5 +1,5 @@
 ﻿{
-    "version" : "25",
+    "version" : "26",
     "days" : [
               {
               "date" : "2013-08-27",
@@ -109,8 +109,8 @@
                            "planeFile" : "Descriptions/Su-35.htm"
                            },
                            {
-                           "startTime" : "14:56",
-                           "endTime" : "14:58",
+                           "startTime" : "15:56",
+                           "endTime" : "15:58",
                            "name" : "Проход\nТ-50 х 3",
                            "description" : " Командир ВС: Богдан, Кондратьев, Чернышев",
                            "plane" : "Т-50",
