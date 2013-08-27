@@ -373,7 +373,11 @@
         ASPlanesModel *newModel = [[ASPlanesModel alloc] initWithJSON:json];
         if (newModel.version > self.planes.version) {
             // Save new file on disk
-            [responseData writeToFile:kDataFileName atomically:YES];
+            NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+            NSString *documentsPath = [paths objectAtIndex:0];
+            NSString *filePath = [documentsPath stringByAppendingPathComponent:kDataFileName];
+            [responseData writeToFile:filePath atomically:YES];
+            NSLog(@"Exposition saved to: %@", filePath);
             self.planes = newModel;
             // Update the view
             self.lastViewBounds = CGRectMake(0, 0, 0, 0);

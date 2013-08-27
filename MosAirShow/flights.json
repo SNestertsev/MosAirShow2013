@@ -1,130 +1,108 @@
-{
-    "version" : "21",
+﻿{
+    "version" : "25",
     "days" : [
               {
               "date" : "2013-08-27",
               "flights" : [
                            {
-                           "startTime" : "14:00",
-                           "endTime" : "14:04",
+                           "startTime" : "15:00",
+                           "endTime" : "15:04",
                            "name" : "Пронос флагов\nКа-226, Ми-17В-5",
                            "description" : "Пилоты: Тимофеев, Захаров"
                            },
                            {
-                           "startTime" : "14:04",
-                           "endTime" : "14:09",
+                           "startTime" : "15:04",
+                           "endTime" : "15:09",
                            "name" : "Проход группой вертолетов",
                            "description" : "В составе группы:\nМи-26, Ми-38, Ми-28Н, Ми-35М, Ми-171, Ка-52, Ка-32\n\nПилоты:\nХорев, Кутанин, Ананьев, Калашников, Маслов, Чередниченко, Иллариошин"
                            },
                            {
-                           "startTime" : "14:09",
-                           "endTime" : "14:13",
+                           "startTime" : "15:09",
+                           "endTime" : "15:13",
                            "name" : "Беркуты\nМи-28 х 4",
                            "description" : "Командир группы: Попов"
                            },
                            {
-                           "startTime" : "14:14",
-                           "endTime" : "14:16",
+                           "startTime" : "15:14",
+                           "endTime" : "15:16",
                            "name" : "Пилотаж\nМи-38",
                            "description" : "Командир ВС: Кутанин",
                            "plane" : "Ми-38",
                            "planeFile" : "Descriptions/Mi-38.htm"
                            },
                            {
-                           "startTime" : "14:16",
-                           "endTime" : "14:18",
+                           "startTime" : "15:16",
+                           "endTime" : "15:18",
                            "name" : "Пилотаж\nКа-52",
                            "description" : "Командир ВС: Чередниченко",
                            "plane" : "Ка-52",
                            "planeFile" : "Descriptions/Ka-52.htm"
                            },
                            {
-                           "startTime" : "14:18",
-                           "endTime" : "14:20",
+                           "startTime" : "15:18",
+                           "endTime" : "15:20",
                            "name" : "Пилотаж\nМи-28Н",
                            "description" : "Командир ВС: Ананьев",
                            "plane" : "Ми-28Н",
                            "planeFile" : "Descriptions/Mi-28N.htm"
                            },
                            {
-                           "startTime" : "14:20",
-                           "endTime" : "14:22",
+                           "startTime" : "15:20",
+                           "endTime" : "15:22",
                            "name" : "Пилотаж\nМи-35М",
                            "description" : "Командир ВС: Калашников"
                            },
                            {
-                           "startTime" : "14:22",
-                           "endTime" : "14:27",
+                           "startTime" : "15:22",
+                           "endTime" : "15:27",
                            "name" : "Пилотаж\nЯк-130",
                            "description" : "Командир ВС: Воропаев",
                            "plane" : "Як-130",
                            "planeFile" : "Descriptions/Yak-130.htm"
                            },
                            {
-                           "startTime" : "14:27",
-                           "endTime" : "14:28",
+                           "startTime" : "15:27",
+                           "endTime" : "15:28",
                            "name" : "Проход\nМиГ-35, МиГ-29ОВТ",
                            "description" : "Пилоты: Горбунов, Беляев"
                            },
                            {
-                           "startTime" : "14:28",
-                           "endTime" : "14:34",
+                           "startTime" : "15:28",
+                           "endTime" : "15:34",
                            "name" : "Пилотаж\nМиГ-29ОВТ",
                            "description" : "Командир ВС: Беляев",
                            "plane" : "МиГ-29ОВТ",
                            "planeFile" : "Descriptions/Mig-29ovt.htm"
                            },
                            {
-                           "startTime" : "14:34",
-                           "endTime" : "14:35",
-                           "name" : "Проход\nRRJ",
-                           "description" : "Командир ВС: Куров"
+                           "startTime" : "15:34",
+                           "endTime" : "15:36",
+                           "name" : "Проход одиночно с 30 сек. интервалом",
+                           "description" : "Самолеты: RRJ, Ту-214, Ту-204СМ, Ил-76МД-90А\n\nПилоты: Куров, Капелькин, Минашкин, Куимов"
                            },
                            {
-                           "startTime" : "14:34",
-                           "endTime" : "14:35",
-                           "name" : "Проход\nТу-214",
-                           "description" : "Командир ВС: Капелькин"
-                           },
-                           {
-                           "startTime" : "14:35",
-                           "endTime" : "14:36",
-                           "name" : "Проход\nТу-204СМ",
+                           "startTime" : "15:36",
+                           "endTime" : "15:40",
+                           "name" : "Маневрирование\nТу-204СМ",
                            "description" : "Командир ВС: Минашкин"
                            },
                            {
-                           "startTime" : "14:35",
-                           "endTime" : "14:36",
-                           "name" : "Проход\nИл-76МД-90А",
+                           "startTime" : "15:40",
+                           "endTime" : "15:44",
+                           "name" : "Маневрирование\nИл-76МД-90А",
                            "description" : "Командир ВС: Куимов"
                            },
                            {
-                           "startTime" : "14:36",
-                           "endTime" : "14:40",
-                           "name" : "Маневрирование\nТу-204СМ",
-                           "description" : "Командир ВС: Минашкин",
-                           "plane" : "Ту-204СМ",
-                           "planeFile" : "Descriptions/Tu-204SM.htm"
-                           },
-                           {
-                           "startTime" : "14:40",
-                           "endTime" : "14:44",
-                           "name" : "Маневрирование\nИл-76МД-90А",
-                           "description" : "Командир ВС: Куимов",
-                           "plane" : "Ил-76МД-90А",
-                           "planeFile" : "Descriptions/Il-76MD.htm"
-                           },
-                           {
-                           "startTime" : "14:44",
-                           "endTime" : "14:50",
+                           "startTime" : "15:44",
+                           "endTime" : "15:50",
                            "name" : "Пилотаж\nСу-30СМ",
                            "description" : "Командир ВС: Аверьянов",
                            "plane" : "Су-30СМ",
                            "planeFile" : "Descriptions/Su-30SM.htm"
                            },
                            {
-                           "startTime" : "14:50",
-                           "endTime" : "14:56",
+                           "startTime" : "15:50",
+                           "endTime" : "15:56",
                            "name" : "Пилотаж\nСу-35С",
                            "description" : "Командир ВС: Ващук",
                            "plane" : "Су-35С",
@@ -134,23 +112,23 @@
                            "startTime" : "14:56",
                            "endTime" : "14:58",
                            "name" : "Проход\nТ-50 х 3",
-                           "description" : "",
+                           "description" : " Командир ВС: Богдан, Кондратьев, Чернышев",
                            "plane" : "Т-50",
                            "planeFile" : "Descriptions/T-50.htm"
                            },
                            {
-                           "startTime" : "14:58",
-                           "endTime" : "15:04",
+                           "startTime" : "15:58",
+                           "endTime" : "16:04",
                            "name" : "Одиночный пилотаж\nТ-50",
                            "description" : "Командир ВС: Богдан",
                            "plane" : "Т-50",
                            "planeFile" : "Descriptions/T-50.htm"
                            },
                            {
-                           "startTime" : "15:04",
-                           "endTime" : "15:14",
+                           "startTime" : "16:04",
+                           "endTime" : "16:14",
                            "name" : "ВВС РФ\nРусские Витязи, Стрижи",
-                           "description" : "Групповой пилотаж"
+                           "description" : " Групповой пилотаж. Командир ВС: Алексеев, Осяйкин "
                            }
                            ]
               },

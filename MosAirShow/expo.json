@@ -1,5 +1,5 @@
 {
-    "expoVersion" : "76",
+    "expoVersion" : "77",
     "expoDate" : "2013-08-30",
     "boundsWidth" : "110",
     "boundsHeight" : "1195",
@@ -668,22 +668,9 @@
       "description" : "Descriptions/Yak-130.htm"
       },
       {
-      "name" : "Су-30СМ",
-      "labelCorner" : "1",
-      "rectTop" : "287",
-      "rectHeight" : "15",
-      "rectLeft" : "0",
-      "rectWidth" : "41",
-      "leftMargin" : "7",
-      "rightMargin" : "11",
-      "imageFile" : "Images/Su-35.png",
-      "flipImage" : "0",
-      "description" : "Descriptions/Su-30SM.htm"
-      },
-      {
       "name" : "МиГ-31БМ",
       "labelCorner" : "1",
-      "rectTop" : "309",
+      "rectTop" : "287",
       "rectHeight" : "15",
       "rectLeft" : "0",
       "rectWidth" : "41",
@@ -692,6 +679,19 @@
       "imageFile" : "Images/Mig-31BM.png",
       "flipImage" : "0",
       "description" : "Descriptions/Mig-31BM.htm"
+      },
+      {
+      "name" : "Су-30СМ",
+      "labelCorner" : "1",
+      "rectTop" : "309",
+      "rectHeight" : "15",
+      "rectLeft" : "0",
+      "rectWidth" : "41",
+      "leftMargin" : "7",
+      "rightMargin" : "11",
+      "imageFile" : "Images/Su-35.png",
+      "flipImage" : "0",
+      "description" : "Descriptions/Su-30SM.htm"
       },
       {
       "name" : "МиГ-29СМТ",

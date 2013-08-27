@@ -199,7 +199,7 @@
 		A5BB3F1C178D868700051D15 /* ASPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPoint.h; sourceTree = "<group>"; };
 		A5BB3F1D178D868700051D15 /* ASPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPoint.m; sourceTree = "<group>"; };
 		A5BB3F30178D871000051D15 /* expo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = expo.json; sourceTree = "<group>"; };
-		A5BB3F31178D871000051D15 /* flights.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flights.json; sourceTree = "<group>"; };
+		A5BB3F31178D871000051D15 /* flights.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; lineEnding = 0; path = flights.json; sourceTree = "<group>"; };
 		A5BB3F32178D871000051D15 /* versions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = versions.json; sourceTree = "<group>"; };
 		A5BB3F3A178D891F00051D15 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A5BB3F41178D89ED00051D15 /* NSDate+DateCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateCategories.h"; sourceTree = "<group>"; };
@@ -218,9 +218,7 @@
 		A5CF061117AB90D6009E2569 /* Road.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Road.jpg; sourceTree = "<group>"; };
 		A5CF061217AB90D6009E2569 /* you-are-here1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "you-are-here1.png"; sourceTree = "<group>"; };
 		A5CF061317AB90D6009E2569 /* you-are-here2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "you-are-here2.png"; sourceTree = "<group>"; };
-		A5CF065C17B0D4C6009E2569 /* MosAirShow copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MosAirShow copy-Info.plist"; path = "/Users/sergey/Проекты/MosAirShow/MosAirShow copy-Info.plist"; sourceTree = "<absolute>"; };
 		A5CF069F17B17069009E2569 /* LiiAndMaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiiAndMaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5CF06A017B17069009E2569 /* MosAirShow copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MosAirShow copy2-Info.plist"; path = "/Users/sergey/Проекты/MosAirShow/MosAirShow copy2-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,8 +272,6 @@
 				A5BB3ED4178D858600051D15 /* MosAirShow */,
 				A5BB3ECD178D858600051D15 /* Frameworks */,
 				A5BB3ECC178D858600051D15 /* Products */,
-				A5CF065C17B0D4C6009E2569 /* MosAirShow copy-Info.plist */,
-				A5CF06A017B17069009E2569 /* MosAirShow copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
