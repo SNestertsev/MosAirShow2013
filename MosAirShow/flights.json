@@ -1,5 +1,5 @@
 ﻿{
-    "version" : "29",
+    "version" : "30",
     "days" : [
               {
               "date" : "2013-08-27",
@@ -327,138 +327,154 @@
               "date" : "2013-08-29",
               "flights" : [
                            {
-                           "startTime" : "14:00",
-                           "endTime" : "14:05",
-                           "name" : "Дем. полет\nАвиатика",
-                           "description" : "Командир ВС: Митрофанов"
-                           },
-                           {
-                           "startTime" : "14:05",
-                           "endTime" : "14:10",
-                           "name" : "Дем. полет\nТВС-2МС",
-                           "description" : "Командир ВС: Барсук"
-                           },
-                           {
-                           "startTime" : "14:11",
-                           "endTime" : "14:41",
-                           "name" : "Дем. полет\nИл-114",
+                           "startTime" : "14:20",
+                           "endTime" : "14:50",
+                           "name" : "Дем.полет\nИл-114",
                            "description" : "Командир ВС: Скрынников"
                            },
-                           {
-                           "startTime" : "14:13",
-                           "endTime" : "14:19",
-                           "name" : "Дем. полет\nАн-2-100",
-                           "description" : "Командир ВС: Тарасюк"
-                           },
-                           {
-                           "startTime" : "14:20",
-                           "endTime" : "14:26",
-                           "name" : "Дем. полет\nDHC-6",
+						   {
+                           "startTime" : "14:22",
+                           "endTime" : "14:28",
+                           "name" : "Дем.полет\nDHC-6",
                            "description" : "Командир ВС: Stackhouse (Канада)"
                            },
+						   {
+                           "startTime" : "14:30",
+                           "endTime" : "14:35",
+                           "name" : "Низкополетное десантирование",
+                           "description" : "Самолет: Ан-2\nКомандир ВС: Башмаков",
+                           "plane" : "Ан-2-100",
+                           "planeFile" : "Descriptions/An-2.htm"
+                           },
+						   {
+                           "startTime" : "14:37",
+                           "endTime" : "14:42",
+                           "name" : "Дем.полет\nF-15F 'Сапсан'",
+                           "description" : "Командир ВС: Лаврентьев"
+                           },
+						   {
+                           "startTime" : "14:44",
+                           "endTime" : "14:48",
+                           "name" : "Пилотаж\nМи-35М",
+                           "description" : "Командир ВС: Калашников"
+                           },
+						   {
+                           "startTime" : "14:50",
+                           "endTime" : "14:53",
+                           "name" : "Дем. полет\nАн-70",
+                           "description" : "Командир ВС: Спасибо",
+						   "plane" : "Ан-70",
+                           "planeFile" : "Descriptions/An-70.htm"
+                           },
                            {
-                           "startTime" : "14:27",
-                           "endTime" : "14:33",
+                           "startTime" : "14:55",
+                           "endTime" : "15:02",
+                           "name" : "Дем.полет\nRafal",
+                           "description" : ""
+                           },
+                           {
+                           "startTime" : "15:04",
+                           "endTime" : "15:12",
+                           "name" : "Дем.полет\nМиГ-29ОВТ",
+                           "description" : "Командир ВС: Беляев",
+                           "plane" : "МиГ-29ОВТ",
+                           "planeFile" : "Descriptions/Mig-29ovt.htm"
+                           },
+						   {
+                           "startTime" : "15:14",
+                           "endTime" : "15:22",
+                           "name" : "Дем.полет\nА-380",
+                           "description" : " Командир ВС: Cail (Франция)",
+                           "plane" : "А-380",
+                           "planeFile" : "Descriptions/A-380.htm"
+                           },
+                           {
+                           "startTime" : "15:24",
+                           "endTime" : "15:30",
+                           "name" : "Дем.полет\nЯк-130",
+                           "description" : "Командир ВС: Кононенко",
+						   "plane" : "Як-130",
+                           "planeFile" : "Descriptions/Yak-130.htm"
+                           },
+                           {
+                           "startTime" : "15:32",
+                           "endTime" : "15:44",
+                           "name" : "Дем.полет\nТу-214",
+                           "description" : "Командир ВС: Капелькин"
+                           },
+						   {
+                           "startTime" : "15:46",
+                           "endTime" : "15:54",
+                           "name" : "Пилотаж\nСу-35С",
+                           "description" : "Командир ВС: Ващук",
+                           "plane" : "Су-35С",
+                           "planeFile" : "Descriptions/Su-35.htm"
+                           },
+						   {
+                           "startTime" : "15:56",
+                           "endTime" : "16:02",
+                           "name" : "Дем.полет\nТу-204",
+                           "description" : "Командир ВС: Минашкин",
+                           },
+						   {
+                           "startTime" : "16:04",
+                           "endTime" : "16:09",
+                           "name" : "Дем.полет\nАн-2-100",
+                           "description" : "Командир ВС: Тарасюк",
+                           "plane" : "Ан-2-100",
+                           "planeFile" : "Descriptions/An-2.htm"
+                           },
+						   {
+                           "startTime" : "16:11",
+                           "endTime" : "16:18",
+                           "name" : "Дем.полет\nСу-30СМ",
+                           "description" : "Командир ВС: Аверьянов",
+                           "plane" : "Су-30СМ",
+                           "planeFile" : "Descriptions/Su-30SM.htm"
+                           },
+						   {
+                           "startTime" : "16:20",
+                           "endTime" : "16:23",
+                           "name" : "Дем.полет\nРысачок",
+                           "description" : "Командир ВС: Макагонов",
+                           "plane" : "Рысачок",
+                           "planeFile" : "Descriptions/Rysachok.htm"
+                           },
+						   {
+                           "startTime" : "16:25",
+                           "endTime" : "16:30",
+                           "name" : "Дем.полет\nТВС-2МС",
+                           "description" : "Командир ВС: Барсук"
+                           },
+						   {
+                           "startTime" : "16:32",
+                           "endTime" : "16:40",
+                           "name" : "Дем.полет\nМиГ-35",
+                           "description" : " Командир ВС: Горбунов",
+                           "plane" : "МиГ-35",
+                           "planeFile" : "Descriptions/Mig-35D.htm"
+                           },
+						   {
+                           "startTime" : "16:42",
+                           "endTime" : "16:47",
+                           "name" : "Авиатика",
+                           "description" : "Командир ВС: Митрофанов"
+                           },
+						   {
+                           "startTime" : "16:49",
+                           "endTime" : "16:55",
                            "name" : "Маневры\nМи-8МСБ",
                            "description" : "Командир ВС: Тишков"
                            },
-                           {
-                           "startTime" : "14:35",
-                           "endTime" : "14:40",
-                           "name" : "Низкополетное десантирование",
-                           "description" : "Самолет: Ан-2\n\nКомандир ВС: Башмаков"
-                           },
-                           {
-                           "startTime" : "14:42",
-                           "endTime" : "14:47",
-                           "name" : "Дем. полет\nF-15F 'Сапсан'",
-                           "description" : "Командир ВС: Лаврентьев"
-                           },
-                           {
-                           "startTime" : "14:48",
-                           "endTime" : "14:52",
-                           "name" : "Проход над ВПП\nМи-35М",
-                           "description" : "Командир ВС: Калашников"
-                           },
-                           {
-                           "startTime" : "14:57",
-                           "endTime" : "15:00",
-                           "name" : "Проход над ВПП\nАн-70",
-                           "description" : "Командир ВС: Спасибо"
-                           },
-                           {
-                           "startTime" : "15:00",
-                           "endTime" : "15:08",
-                           "name" : "Дем. полет\nМиГ-29ОВТ",
-                           "description" : "Командир ВС: Беляев"
-                           },
-                           {
-                           "startTime" : "15:10",
-                           "endTime" : "15:18",
-                           "name" : "Дем. полет\nА-380",
-                           "description" : "Командир ВС: Cail (Франция)"
-                           },
-                           {
-                           "startTime" : "15:20",
-                           "endTime" : "15:27",
-                           "name" : "Дем. полет\nRafal",
-                           "description" : " "
-                           },
-                           {
-                           "startTime" : "15:28",
-                           "endTime" : "15:38",
-                           "name" : "Дем. полет\nТу-214",
-                           "description" : "Командир ВС: Капелькин"
-                           },
-                           {
-                           "startTime" : "15:40",
-                           "endTime" : "15:47",
-                           "name" : "Дем. полет\nСу-30СМ",
-                           "description" : "Командир ВС: Аверьянов"
-                           },
-                           {
-                           "startTime" : "15:49",
-                           "endTime" : "15:55",
-                           "name" : "Дем. полет\nТу-204",
-                           "description" : "Командир ВС: Минашкин"
-                           },
-                           {
-                           "startTime" : "15:56",
-                           "endTime" : "16:02",
-                           "name" : "Дем. полет\nЯк-130",
-                           "description" : "Командир ВС: Кононенко"
-                           },
-                           {
-                           "startTime" : "16:04",
-                           "endTime" : "16:13",
-                           "name" : "Дем. полет\nТ-50",
-                           "description" : "Командир ВС: Богдан"
-                           },
-                           {
-                           "startTime" : "16:14",
-                           "endTime" : "16:17",
-                           "name" : "Дем. полет\nРысачок",
-                           "description" : "Командир ВС: Макагонов"
-                           },
-                           {
-                           "startTime" : "16:18",
-                           "endTime" : "16:26",
-                           "name" : "Дем. полет\nМиГ-35",
-                           "description" : "Командир ВС: Горбунов"
-                           },
-                           {
-                           "startTime" : "16:27",
-                           "endTime" : "16:52",
-                           "name" : "'Балтийские пчелы'\nЛ-39 х 5",
-                           "description" : "Пилоты: Солодуха, Юдкин, Перекрестов, Зариньш, Соболев"
-                           },
-                           {
-                           "startTime" : "16:52",
-                           "endTime" : "17:00",
-                           "name" : "Дем. полет\nСу-35С",
-                           "description" : "Командир ВС: Ващук"
+						   {
+                           "startTime" : "16:57",
+                           "endTime" : "17:05",
+                           "name" : "Дем.полет\nТ-50",
+                           "description" : " Командир ВС: Богдан",
+                           "plane" : "Т-50",
+                           "planeFile" : "Descriptions/T-50.htm"
                            }
-                           ]
+						   ]
               },
               {
               "date" : "2013-08-30",
